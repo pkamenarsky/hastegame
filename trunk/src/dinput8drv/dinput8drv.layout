@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE CodeBlocks_layout_file>
+<CodeBlocks_layout_file>
+	<File name="di8.hh" open="0" top="0">
+		<Cursor position="114" topLine="0"/>
+	</File>
+	<File name="di8server.cpp" open="0" top="0">
+		<Cursor position="2592" topLine="61"/>
+	</File>
+	<File name="di8server.hh" open="0" top="0">
+		<Cursor position="950" topLine="5"/>
+	</File>
+	<File name="dllmain.cpp" open="0" top="0">
+		<Cursor position="219" topLine="0"/>
+	</File>
+	<File name="mouse.cpp" open="0" top="0">
+		<Cursor position="2718" topLine="99"/>
+	</File>
+	<File name="mouse.hh" open="0" top="0">
+		<Cursor position="248" topLine="0"/>
+	</File>
+</CodeBlocks_layout_file>

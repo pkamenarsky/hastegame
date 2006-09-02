@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<!DOCTYPE CodeBlocks_project_file>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="1"/>
+	<Project>
+		<Option title="glew_static"/>
+		<Option makefile="Makefile"/>
+		<Option makefile_is_custom="0"/>
+		<Option default_target="-1"/>
+		<Option compiler="0"/>
+		<Build>
+			<Target title="Debug">
+				<Option output="..\..\lib\libglew32sd.a"/>
+				<Option working_dir=""/>
+				<Option object_output="static\debug"/>
+				<Option deps_output=".deps"/>
+				<Option type="2"/>
+				<Option compiler="0"/>
+				<Option createDefFile="1"/>
+				<Option projectResourceIncludeDirsRelation="2"/>
+				<Compiler>
+					<Add option="-Wall"/>
+					<Add option="-g"/>
+					<Add option="-O0"/>
+					<Add option="-DWIN32"/>
+					<Add option="-D_WIN32"/>
+					<Add option="-D_DEBUG"/>
+					<Add option="-D_LIB"/>
+					<Add option="-DWIN32_LEAN_AND_MEAN"/>
+					<Add option="-DVC_EXTRALEAN"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="..\..\include"/>
+				</Compiler>
+			</Target>
+			<Target title="Debug MX">
+				<Option output="..\..\lib\libglew32mxsd.a"/>
+				<Option working_dir=""/>
+				<Option object_output="static\debug-mx"/>
+				<Option deps_output=".deps"/>
+				<Option type="2"/>
+				<Option compiler="0"/>
+				<Option createDefFile="1"/>
+				<Option projectResourceIncludeDirsRelation="2"/>
+				<Compiler>
+					<Add option="-Wall"/>
+					<Add option="-g"/>
+					<Add option="-O0"/>
+					<Add option="-DWIN32"/>
+					<Add option="-D_DEBUG"/>
+					<Add option="-D_LIB"/>
+					<Add option="-DWIN32_LEAN_AND_MEAN"/>
+					<Add option="-DVC_EXTRALEAN"/>
+					<Add option="-DGLEW_MX"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="..\..\include"/>
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="..\..\lib\libglew32s.a"/>
+				<Option working_dir=""/>
+				<Option object_output="static\release"/>
+				<Option deps_output=".deps"/>
+				<Option type="2"/>
+				<Option compiler="0"/>
+				<Option createDefFile="1"/>
+				<Option projectResourceIncludeDirsRelation="2"/>
+				<Compiler>
+					<Add option="-O2"/>
+					<Add option="-Wall"/>
+					<Add option="-DWIN32"/>
+					<Add option="-DNDEBUG"/>
+					<Add option="-D_LIB"/>
+					<Add option="-DWIN32_LEAN_AND_MEAN"/>
+					<Add option="-DVC_EXTRALEAN"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="..\..\include"/>
+				</Compiler>
+			</Target>
+			<Target title="Release MX">
+				<Option output="..\..\lib\libglew32mxs.a"/>
+				<Option working_dir=""/>
+				<Option object_output="static\release-mx"/>
+				<Option deps_output=".deps"/>
+				<Option type="2"/>
+				<Option compiler="0"/>
+				<Option createDefFile="1"/>
+				<Option projectResourceIncludeDirsRelation="2"/>
+				<Compiler>
+					<Add option="-O2"/>
+					<Add option="-Wall"/>
+					<Add option="-DWIN32"/>
+					<Add option="-DNDEBUG"/>
+					<Add option="-D_LIB"/>
+					<Add option="-DWIN32_LEAN_AND_MEAN"/>
+					<Add option="-DVC_EXTRALEAN"/>
+					<Add option="-DGLEW_MX"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="..\..\include"/>
+				</Compiler>
+			</Target>
+		</Build>
+		<Unit filename="..\..\include\GL\glew.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="Debug"/>
+			<Option target="Debug MX"/>
+			<Option target="Release"/>
+			<Option target="Release MX"/>
+		</Unit>
+		<Unit filename="..\..\include\GL\wglew.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="Debug"/>
+			<Option target="Debug MX"/>
+			<Option target="Release"/>
+			<Option target="Release MX"/>
+		</Unit>
+		<Unit filename="..\..\src\glew.c">
+			<Option compilerVar="CC"/>
+			<Option target="Debug"/>
+			<Option target="Debug MX"/>
+			<Option target="Release"/>
+			<Option target="Release MX"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

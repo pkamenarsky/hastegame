@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<programarrays classname="DOT3Programs">
+<array name="dot3vp" type="vertexprogram">
+<!-- In the vprogram below, lightpos should be rotated by the inverse world matrix before rendering -->
+<program name="dot3vp_vp" format="cg_vprogram" entrypoint="main"><![CDATA[
+float4x4 matWorldViewProjection; 
+float4 vViewPosition;
+float3 lightpos; 
+float2 fogvalues; 
+ 
+struct VS_INPUT  
+{ 
+   float4 Position : POSITION0; 
+   float3 Normal : NORMAL; 
+   float2 UV : TEXCOORD0;
+   float3 Tangent : TEXCOORD1;
+   float3 Binormal : TEXCOORD2;
+}; 
+ 
+struct VS_OUTPUT  
+{ 
+   float4 Position : POSITION0; 
+   float2 UV : TEXCOORD0; 
+   float4 Lightpos : TEXCOORD1;
+   float4 Vertexpos :  TEXCOORD2;
+   float Fog: FOG; 
+}; 
+ 
+VS_OUTPUT main( VS_INPUT Input ) 
+{
+   VS_OUTPUT Output;
+ 
+   Output.Position = mul( matWorldViewProjection, Input.Position );
+   Output.Fog = 1.0f-((Output.Position.z-fogvalues.x)/fogvalues.y); 
+   Output.UV = Input.UV;
+   
+   float3x3 normalMat = float3x3(matWorldViewProjection);
+   float3x3 texspace = float3x3(mul(normalMat, Input.Tangent), mul(normalMat, Input.Binormal), mul(normalMat, Input.Normal));
+ 
+   float3 lightvector = mul(matWorldViewProjection, float4(lightpos, 1)).xyz;
+
+   Output.Vertexpos = float4(mul(texspace, Output.Position.xyz), length(Output.Position.xyz));
+   Output.Lightpos.xyz = mul(texspace, lightvector) - Output.Vertexpos.xyz;
+
+   Output.Lightpos.w = length(Output.Lightpos.xyz);
+
+   return (Output); 
+}
+]]></program>
+</array>
+<array name="dot3fp" type="fragmentprogram">
+<program name="dot3vp_fp" format="cg_fprogram" entrypoint="main"><![CDATA[
+sampler2D diffuseTex; 
+sampler2D normalMap;
+float4 colorAndRadius;
+float4 specularColorAndPower;
+
+float4 main(  float2 texCoord:TEXCOORD0, 
+   float4 LightPos : TEXCOORD1,
+   float4 VertexPos :  TEXCOORD2) : COLOR0 
+{
+   float4 t,c;
+   float3 l,s;
+   float3 pt_eye, pt_light;
+   float a;
+
+   float3 light_pos = LightPos.xyz;
+   float light_dist = LightPos.w;
+
+   float3 vertex_pos = VertexPos.xyz;
+   float vertex_dist = VertexPos.w;
+
+   float depth = 1;
+   float texsize = 512;
+
+   // ray intersect in view direction
+   a  = -depth / vertex_pos.z;
+   s = vertex_pos * a;
+   s.z = 1.0;
+  
+   //	find the distance to the actualy heightfield
+   pt_eye = float3(texCoord, 0.0);
+   intersect_square_cone_10step (pt_eye, s);
+  
+   // get rm and color texture points
+   c=tex2D(diffuseMap,pt_eye.xy);
+
+   // expand normal from normal map in local polygon space
+   // blue = df/dx
+   // alpha = df/dy (image coords are no longer backward!)
+   // note: I _need_ the texture size to scale the normal properly!
+   t=tex2D(normalMap, pt_eye.xy);
+   t = float4((t.ba-0.5) * (-depth * texsize), 1.0, 0.0);
+   t=normalize(t);
+
+   // adjust the hit-position
+   // (only useful if the light is near relative
+   // to the depth)
+   //p -= v*d*a;
+   
+   // compute attenuation
+//   float att = gl_LightSource[0].linearAttenuation;
+//   att = min (1.0, 1.0 / (light_dist*att));
+   
+   // rescale the light vector
+//   l = att * normalize(light_pos);
+
+   // compute the final color
+//   gl_FragColor = vec4(
+//   			gl_LightSource[0].ambient.xyz*c.xyz
+//   			+gl_LightSource[0].diffuse.xyz*c.xyz*max(0.0,dot(l,t.xyz)), 
+//   			1.0);
+
+   float fd=clamp(dot(light_pos/light_dist,t),0,1);
+//   float fs=pow(clamp(dot(normalize(light_pos+vertes_pos),t),0,1),specularColorAndPower.w);
+   float att=clamp( 1.0f-light_dist / colorAndRadius.w,0,1);
+ 
+   return( float4((fd*color*colorAndRadius.xyz)*att, 1.0f ) ); 
+}
+
+// just take 10 steps!
+void intersect_square_cone_10step (inout float3 dp, float3 ds)
+{
+   // the not Z component of the direction vector (for a square cone)
+   float iz = max(abs(ds.x),abs(ds.y));
+   // SOR
+   float w = 1.2;
+   // my starting location (is at z=0)
+   // texture lookup
+   float4 t;
+
+   //	find the initial location and height
+   t=tex2D(normalMap, dp.xy);
+   // right, I need to take one step.
+   // I use the current height above the texture,
+   // and the information about the cone-ratio
+   // to size a single step.  So it is fast and 
+   // precise!  (like a coneified version of
+   // space leaping, but adapted from voxels)
+   dp += ds * w * (t.r - dp.z) / (iz/(t.g*t.g) + 1.0);
+   
+   // and repeat a few (4) times 
+   t=tex2D(normalMap, dp.xy);
+   dp += ds * w * (t.r - dp.z) / (iz/(t.g*t.g) + 1.0);
+   t=tex2D(normalMap, dp.xy);
+   dp += ds * w * (t.r - dp.z) / (iz/(t.g*t.g) + 1.0);
+   t=tex2D(normalMap, dp.xy);
+   dp += ds * w * (t.r - dp.z) / (iz/(t.g*t.g) + 1.0);
+   t=tex2D(normalMap, dp.xy);
+   dp += ds * w * (t.r - dp.z) / (iz/(t.g*t.g) + 1.0);
+   
+   // and another 5 times 
+   t=tex2D(normalMap, dp.xy);
+   dp += ds * w * (t.r - dp.z) / (iz/(t.g*t.g) + 1.0);
+   t=tex2D(normalMap, dp.xy);
+   dp += ds * w * (t.r - dp.z) / (iz/(t.g*t.g) + 1.0);
+   t=tex2D(normalMap, dp.xy);
+   dp += ds * w * (t.r - dp.z) / (iz/(t.g*t.g) + 1.0);
+   t=tex2D(normalMap, dp.xy);
+   dp += ds * w * (t.r - dp.z) / (iz/(t.g*t.g) + 1.0);
+   t=tex2D(normalMap, dp.xy);
+   dp += ds * w * (t.r - dp.z) / (iz/(t.g*t.g) + 1.0);
+}
+
+]]></program>
+</array>
+</programarrays>

@@ -1,0 +1,33 @@
+* BOB when walking
+
+* ION: BSP models
+
+
+* replace all String& with String (or std::string?)
+* cmd_map --> handling must go in G_Frame
+
+* entity arch:
+	+ every entitiy has a std::map with properties (string, int, bool)
+	+ every entity can be attached to another entitiy, using the group node or "vitrually" only
+	+ every entity has a callback command function
+	+ every entity passes its commands (triggered by a console cmd, f.e.) to the callback funtions of it children
+	+ every callback function passes its received commands to the children of its entity
+
+	* example - getting a rocket launcher and firing a rocket
+		* RL.Touch sets the Player bool "rocket launcher" property to TRUE
+		* RL.Touch spawns a new entity "V_rocket_launcher" and attaches it to Player
+		* RL.Touch detaches RL from the world
+		* V_RL receives the movement commands of the player (+forward, etc.) and sets its model animations appropriately
+		* V_RL receives the "+attack" Player command
+			* V_RL decreases the "rockets" Player entity property by one
+				* if "rockets" <= 0, V_RL issues a "use machinegun" global console command
+				* V_RL receives the "use machinegun" global console command, plays its "deactivate" animation and waits for a "use rocketlauncher" command for reactivation
+			* V_RL spawns a "rocket" entity
+				* Rocket attaches itself to the world (?? <-- need that ??)
+
+quakenet #ndml #q2.se #q2.pl
+
+NEWTON:
+=======
+
+* that's because of the inertia values. try using NewtonConvexCollisionCalculateInertial (iirc), it will calculate the inertia for you. then just multiply by the mass before sending it to Newton in NewtonBodySetMassMatrix.

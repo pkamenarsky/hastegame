@@ -1,0 +1,196 @@
+#include <sstream>
+#include <map>
+#include "../base/datablock.hh"
+#include "../base/log.hh"
+#include "../math/meshconv.hh"
+#include "../video/coreenums.hh"
+#include "loadobj.hh"
+
+namespace ion {
+namespace video {
+
+	/*OBJLoader::OBJLoader(base::Streamable &streamable):m_ppMeshes(0),m_NumMeshes(0)
+	{
+		base::Datablock dblock;
+		dblock << streamable;
+		dblock.seek(0,base::LocalStreamable::SeekAbsolute);
+
+		while (!dblock.eof()) {
+			base::String str;
+			dblock.readLine(str);
+		}
+	}
+
+	OBJLoader::~OBJLoader()
+	{
+		if (m_ppMeshes!=0) {
+			for (ion_uint32 i=0;i<m_NumMeshes;++i)
+				delete m_ppMeshes[i];
+			delete [] m_ppMeshes;
+		}
+	}
+
+	ion_uint32 OBJLoader::numMeshes() const
+	{
+		return m_NumMeshes;
+	}
+
+	const Memmesh* OBJLoader::mesh(const ion_uint32 index) const
+	{
+		return (index<m_NumMeshes) ? m_ppMeshes[index] : 0;
+	}*/
+
+	void loadOBJ(base::Streamable &streamable,Mesh &rMesh,const float scale,const bool useTangentspace)
+	{
+		base::Datablock dblock;
+		dblock << streamable;
+		dblock.seek(0,base::LocalStreamable::SeekAbsolute);
+
+		math::Meshconv meshconv(true,false);
+
+		ion_uint32 attr=0,maxattr=0;
+
+		std::map <std::string,ion_uint32> materials;
+		std::vector <ion_uint32> attrs;
+
+		while (!dblock.eof()) {
+			base::String str;
+			dblock.readLine(str);
+
+			std::string keyword,data;
+
+			std::stringstream sstr(str.STLstring());
+
+			sstr >> keyword;
+			if (keyword=="#") continue;
+			else if (keyword=="v") {
+				float x,y,z;
+				sstr >> x >> y >> z;
+				meshconv.addXYZVtx(math::Meshconv::InVtx(x,y,z));
+			} else if (keyword=="vt") {
+				float u,v;
+				sstr >> u >> v;
+				meshconv.addTexcoord2D(math::Meshconv::InTexcoord2D(u,v));
+			} else if (keyword=="vn") {
+				float x,y,z;
+				sstr >> x >> y >> z;
+				meshconv.addNormal(math::Meshconv::InNormal(x,y,z));
+			} else if (keyword=="f") {
+				//phil begin
+				ion_uint32 nt, firstv[32], firstt[32], firstn[32];
+
+				for(nt = 0, sstr >> data; data.find_first_of('/') != std::string::npos && nt < 32; sstr >> data, nt++)
+				{
+					size_t pos1=0,pos2=0;
+					pos1=data.find_first_of('/');
+					pos2=data.find_last_of('/');
+
+					ion_uint32 geomvtx,texvtx,normvtx;
+					std::stringstream sx(data.substr(0,pos1)); sx >> firstv[nt];
+					std::stringstream sy(data.substr(pos1+1,pos2-pos1-1)); sy >> firstt[nt];
+					std::stringstream sz(data.substr(pos2+1)); sz >> firstn[nt];
+				}
+
+				for (int i=2;i<nt;++i) {
+					math::Meshconv::InTriangle tri;
+
+					tri.m_XYZ[0]=firstv[0]-1;
+					tri.m_Texcoords2D[0]=firstt[0]-1;
+					tri.m_Normals[0]=firstn[0]-1;
+					
+					tri.m_XYZ[1]=firstv[i-1]-1;
+					tri.m_Texcoords2D[1]=firstt[i-1]-1;
+					tri.m_Normals[1]=firstn[i-1]-1;
+
+					tri.m_XYZ[2]=firstv[i]-1;
+					tri.m_Texcoords2D[2]=firstt[i]-1;
+					tri.m_Normals[2]=firstn[i]-1;
+
+					attrs.push_back(attr);
+					meshconv.addTriangle(tri);
+				}
+				//phil end
+			} else if (keyword=="usemtl") {
+				sstr >> data;
+
+				std::map<std::string,ion_uint32>::iterator it=materials.find(data);
+				if (it==materials.end()) {
+					attr=maxattr;
+					materials[data]=attr;
+					++maxattr;
+				} else attr=(*it).second;
+			} else {
+				/*while (!sstr.eof()) {
+					sstr >> data;
+				}*/
+			}
+		}
+
+		meshconv.calculate();
+
+		Vertexformat vf;
+		vf.addEntry(VertexFormatEntry_Position,VertexFormatSemantic_Position);
+		vf.addEntry(VertexFormatEntry_Texcoord2D,VertexFormatSemantic_Texcoord);
+		vf.addEntry(VertexFormatEntry_Normal,VertexFormatSemantic_Normal);
+
+		if (useTangentspace) {
+			vf.addEntry(VertexFormatEntry_Texcoord3D,VertexFormatSemantic_Tangent);
+			vf.addEntry(VertexFormatEntry_Texcoord3D,VertexFormatSemantic_Binormal);
+		}
+
+		rMesh.reinit(meshconv.numOutTriangles(),meshconv.numOutVertices(),vf,Indexformat_32bit);
+		memset(rMesh.attributebuffer().data(),0,rMesh.attributebuffer().size());
+
+		math::Vector3f vmin,vmax;
+		
+		rMesh.vertexstream().map(Map_Writeonly);
+		for (ion_uint32 vtx=0;vtx<meshconv.numOutVertices();++vtx) {
+			const math::Meshconv::OutVertex &outvtx=meshconv.outVertex(vtx);
+
+			float xx=outvtx.m_XYZ.m_X*scale;
+			float yy=outvtx.m_XYZ.m_Y*scale;
+			float zz=outvtx.m_XYZ.m_Z*scale;
+
+			if (vtx==0) {
+				vmin.x()=vmax.x()=xx;
+				vmin.y()=vmax.y()=yy;
+				vmin.z()=vmax.z()=zz;
+			} else {
+				if (vmin.x()>xx) vmin.x()=xx;
+				if (vmin.y()>yy) vmin.y()=yy;
+				if (vmin.z()>zz) vmin.z()=zz;
+
+				if (vmax.x()<xx) vmax.x()=xx;
+				if (vmax.y()<yy) vmax.y()=yy;
+				if (vmax.z()<zz) vmax.z()=zz;
+			}
+
+			rMesh.vertexstream().position(vtx,xx,yy,zz);
+			rMesh.vertexstream().texcoord2D(vtx,0,outvtx.m_Texcoord.m_U,outvtx.m_Texcoord.m_V);
+			rMesh.vertexstream().normal(vtx,outvtx.m_Normal.m_X,outvtx.m_Normal.m_Y,outvtx.m_Normal.m_Z);
+		}
+		rMesh.vertexstream().unmap();
+
+		rMesh.indexstream().map(Map_Writeonly);
+		for (ion_uint32 face=0;face<meshconv.numOutTriangles();++face) {
+			const math::Meshconv::OutTriangle &outtri=meshconv.outTriangle(face);
+			rMesh.indexstream().index(face*3+0,outtri.m_Indices[0]);
+			rMesh.indexstream().index(face*3+1,outtri.m_Indices[1]);
+			rMesh.indexstream().index(face*3+2,outtri.m_Indices[2]);
+
+			rMesh.attributebuffer()[face]=attrs[face];
+		}
+		rMesh.indexstream().unmap();
+
+		rMesh.attributetable().recalculate(rMesh.attributebuffer());
+
+		math::Vector3f vv=vmax-vmin,vc=(vmax+vmin)*0.5f;
+		rMesh.boundingSphere().center(vc);
+		rMesh.boundingSphere().radius(vv.length()*0.5f);
+
+		rMesh.AABB().center(vc);
+		rMesh.AABB().extents(vv);
+	}
+
+}
+}

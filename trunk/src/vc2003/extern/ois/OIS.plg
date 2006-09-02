@@ -1,0 +1,1208 @@
+<html>
+<body>
+<pre>
+<h1>Erstellungsprotokoll</h1>
+<h3>
+--------------------Konfiguration: dinput8drv - Win32 Release--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+Erstellen der temporären Datei  "C:\DOKUME~1\phil\LOKALE~1\Temp\RSP24F.tmp" mit Inhalten
+[
+/nologo /MT /W3 /GX /Zi /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_USRDLL" /D "ION_EXPORTS" /D "_MBCS" /Fo"Release/" /Fd"Release/" PRECOMP_VC7_TOBEREMOVED /c 
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\dinput8drv\di8server.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\dinput8drv\dllmain.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\dinput8drv\keyboard.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\dinput8drv\mouse.cpp"
+]
+Creating command line "cl.exe @C:\DOKUME~1\phil\LOKALE~1\Temp\RSP24F.tmp" 
+Erstellen der temporären Datei  "C:\DOKUME~1\phil\LOKALE~1\Temp\RSP250.tmp" mit Inhalten
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ../../../bin/ion.lib dinput8.lib dxguid.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"../../../bin/dinput8drv.pdb" /debug /machine:IX86 /out:"../../../bin/dinput8drv.dll" /implib:".\../../../bin/dinput8drv.lib" /pdbtype:sept /opt:ref /opt:icf 
+".\Release\di8server.obj"
+".\Release\dllmain.obj"
+".\Release\keyboard.obj"
+".\Release\mouse.obj"
+]
+Erstellen der Befehlzeile "link.exe @C:\DOKUME~1\phil\LOKALE~1\Temp\RSP250.tmp"
+<h3>Ausgabefenster</h3>
+Kompilierung läuft...
+cl : Command line warning D4024 : unrecognized source file type 'PRECOMP_VC7_TOBEREMOVED', object file assumed
+cl : Command line warning D4027 : source file 'PRECOMP_VC7_TOBEREMOVED' ignored
+di8server.cpp
+dllmain.cpp
+keyboard.cpp
+mouse.cpp
+Generating Code...
+Linker-Vorgang läuft...
+LINK : warning LNK4224: /PDBTYPE is no longer supported;  ignored
+LINK : fatal error LNK1181: cannot open input file '../../../bin/ion.lib'
+Fehler beim Ausführen von link.exe.
+
+
+
+<h3>Ergebnisse</h3>
+dinput8drv.dll - 1 Fehler, 3 Warnung(en)
+<h3>
+--------------------Konfiguration: opengldrv - Win32 Release--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+Erstellen der temporären Datei  "C:\DOKUME~1\phil\LOKALE~1\Temp\RSP251.tmp" mit Inhalten
+[
+/nologo /MT /W3 /GX /Zi /I "../../extern/glew/include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_USRDLL" /D "ION_EXPORTS" /D "GLEW_STATIC" /D "OPENGLDRV_USE_CG" /D "_MBCS" /Fo"Release/" /Fd"Release/" PRECOMP_VC7_TOBEREMOVED /c 
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\opengldrv\bufobject.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\opengldrv\cgoglfragmentprogram.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\opengldrv\cgoglvertexprogram.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\opengldrv\iongl.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\opengldrv\ogl2dtexture.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\opengldrv\ogl_win32.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\opengldrv\ogldevice.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\opengldrv\oglindexstream.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\opengldrv\oglvertexstream.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\opengldrv\rendertotexture.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\opengldrv\tooglconvs.cpp"
+]
+Creating command line "cl.exe @C:\DOKUME~1\phil\LOKALE~1\Temp\RSP251.tmp" 
+Erstellen der temporären Datei  "C:\DOKUME~1\phil\LOKALE~1\Temp\RSP252.tmp" mit Inhalten
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ../../../bin/ion.lib ../extern/glew/static/release/glew32s.lib opengl32.lib cg.lib cgGL.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"../../../bin/opengldrv.pdb" /debug /machine:IX86 /out:"../../../bin/opengldrv.dll" /implib:".\../../../bin/opengldrv.lib" /pdbtype:sept /opt:ref /opt:icf 
+".\Release\bufobject.obj"
+".\Release\cgoglfragmentprogram.obj"
+".\Release\cgoglvertexprogram.obj"
+".\Release\iongl.obj"
+".\Release\ogl2dtexture.obj"
+".\Release\ogl_win32.obj"
+".\Release\ogldevice.obj"
+".\Release\oglindexstream.obj"
+".\Release\oglvertexstream.obj"
+".\Release\rendertotexture.obj"
+".\Release\tooglconvs.obj"
+]
+Erstellen der Befehlzeile "link.exe @C:\DOKUME~1\phil\LOKALE~1\Temp\RSP252.tmp"
+<h3>Ausgabefenster</h3>
+Kompilierung läuft...
+cl : Command line warning D4024 : unrecognized source file type 'PRECOMP_VC7_TOBEREMOVED', object file assumed
+cl : Command line warning D4027 : source file 'PRECOMP_VC7_TOBEREMOVED' ignored
+bufobject.cpp
+cgoglfragmentprogram.cpp
+cgoglvertexprogram.cpp
+iongl.cpp
+ogl2dtexture.cpp
+ogl_win32.cpp
+D:\Programme\Microsoft Visual Studio\CG23_new\src\opengldrv\ogl_win32.cpp(50) : error C2065: 'GWLP_USERDATA' : undeclared identifier
+D:\Programme\Microsoft Visual Studio\CG23_new\src\opengldrv\ogl_win32.cpp(50) : error C3861: 'GetWindowLongPtr': identifier not found, even with argument-dependent lookup
+D:\Programme\Microsoft Visual Studio\CG23_new\src\opengldrv\ogl_win32.cpp(285) : error C3861: 'SetWindowLongPtr': identifier not found, even with argument-dependent lookup
+ogldevice.cpp
+oglindexstream.cpp
+Generating Code...
+Compiling...
+oglvertexstream.cpp
+rendertotexture.cpp
+tooglconvs.cpp
+Generating Code...
+Fehler beim Ausführen von cl.exe.
+
+
+
+<h3>Ergebnisse</h3>
+opengldrv.dll - 3 Fehler, 2 Warnung(en)
+<h3>
+--------------------Konfiguration: d3d9drv - Win32 Release--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+Erstellen der temporären Datei  "C:\DOKUME~1\phil\LOKALE~1\Temp\RSP253.tmp" mit Inhalten
+[
+/nologo /MT /W3 /GX /Zi /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_USRDLL" /D "ION_EXPORTS" /D "D3D9DRV_USE_CG" /D "_MBCS" /Fo"Release/" /Fd"Release/" PRECOMP_VC7_TOBEREMOVED /c 
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\d3d9drv\cgd3d9fragmentprogram.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\d3d9drv\cgd3d9vertexprogram.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\d3d9drv\d3d9cubemap.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\d3d9drv\d3d9device.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\d3d9drv\d3d9fragmentprogram.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\d3d9drv\d3d9indexstream.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\d3d9drv\d3d9texture2d.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\d3d9drv\d3d9vertexprogram.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\d3d9drv\d3d9vertexstream.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\d3d9drv\dllmain.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\d3d9drv\tod3d9convs.cpp"
+]
+Creating command line "cl.exe @C:\DOKUME~1\phil\LOKALE~1\Temp\RSP253.tmp" 
+Erstellen der temporären Datei  "C:\DOKUME~1\phil\LOKALE~1\Temp\RSP254.tmp" mit Inhalten
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ../../../bin/ion.lib d3d9.lib d3dx9.lib dxerr9.lib cg.lib cgD3D9.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"../../../bin/d3d9drv.pdb" /debug /machine:IX86 /out:"../../../bin/d3d9drv.dll" /implib:".\../../../bin/d3d9drv.lib" /pdbtype:sept /opt:ref /opt:icf 
+".\Release\cgd3d9fragmentprogram.obj"
+".\Release\cgd3d9vertexprogram.obj"
+".\Release\d3d9cubemap.obj"
+".\Release\d3d9device.obj"
+".\Release\d3d9fragmentprogram.obj"
+".\Release\d3d9indexstream.obj"
+".\Release\d3d9texture2d.obj"
+".\Release\d3d9vertexprogram.obj"
+".\Release\d3d9vertexstream.obj"
+".\Release\dllmain.obj"
+".\Release\tod3d9convs.obj"
+]
+Erstellen der Befehlzeile "link.exe @C:\DOKUME~1\phil\LOKALE~1\Temp\RSP254.tmp"
+<h3>Ausgabefenster</h3>
+Kompilierung läuft...
+cl : Command line warning D4024 : unrecognized source file type 'PRECOMP_VC7_TOBEREMOVED', object file assumed
+cl : Command line warning D4027 : source file 'PRECOMP_VC7_TOBEREMOVED' ignored
+cgd3d9fragmentprogram.cpp
+cgd3d9vertexprogram.cpp
+d3d9cubemap.cpp
+d3d9device.cpp
+D:\Programme\Microsoft Visual Studio\CG23_new\src\d3d9drv\d3d9device.cpp(174) : error C2065: 'GWLP_USERDATA' : undeclared identifier
+D:\Programme\Microsoft Visual Studio\CG23_new\src\d3d9drv\d3d9device.cpp(174) : error C3861: 'GetWindowLongPtr': identifier not found, even with argument-dependent lookup
+D:\Programme\Microsoft Visual Studio\CG23_new\src\d3d9drv\d3d9device.cpp(289) : error C3861: 'SetWindowLongPtr': identifier not found, even with argument-dependent lookup
+D:\Programme\Microsoft Visual Studio\CG23_new\src\d3d9drv\d3d9device.cpp(506) : error C3861: 'D3DXGetVertexShaderProfile': identifier not found, even with argument-dependent lookup
+D:\Programme\Microsoft Visual Studio\CG23_new\src\d3d9drv\d3d9device.cpp(563) : error C3861: 'D3DXGetPixelShaderProfile': identifier not found, even with argument-dependent lookup
+d3d9fragmentprogram.cpp
+D:\Programme\Microsoft Visual Studio\CG23_new\src\d3d9drv\d3d9fragmentprogram.cpp(266) : error C2039: 'GetSamplerIndex' : is not a member of 'ID3DXConstantTable'
+        d:\Programme\Microsoft Visual Studio\VC98\Include\d3dx9shader.h(237) : see declaration of 'ID3DXConstantTable'
+D:\Programme\Microsoft Visual Studio\CG23_new\src\d3d9drv\d3d9fragmentprogram.cpp(278) : error C2039: 'GetSamplerIndex' : is not a member of 'ID3DXConstantTable'
+        d:\Programme\Microsoft Visual Studio\VC98\Include\d3dx9shader.h(237) : see declaration of 'ID3DXConstantTable'
+d3d9indexstream.cpp
+d3d9texture2d.cpp
+d3d9vertexprogram.cpp
+D:\Programme\Microsoft Visual Studio\CG23_new\src\d3d9drv\d3d9vertexprogram.cpp(258) : error C2039: 'GetSamplerIndex' : is not a member of 'ID3DXConstantTable'
+        d:\Programme\Microsoft Visual Studio\VC98\Include\d3dx9shader.h(237) : see declaration of 'ID3DXConstantTable'
+D:\Programme\Microsoft Visual Studio\CG23_new\src\d3d9drv\d3d9vertexprogram.cpp(270) : error C2039: 'GetSamplerIndex' : is not a member of 'ID3DXConstantTable'
+        d:\Programme\Microsoft Visual Studio\VC98\Include\d3dx9shader.h(237) : see declaration of 'ID3DXConstantTable'
+Generating Code...
+Compiling...
+d3d9vertexstream.cpp
+dllmain.cpp
+tod3d9convs.cpp
+Generating Code...
+Fehler beim Ausführen von cl.exe.
+
+
+
+<h3>Ergebnisse</h3>
+d3d9drv.dll - 9 Fehler, 2 Warnung(en)
+<h3>
+--------------------Konfiguration: oisdrv - Win32 Release--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+Erstellen der temporären Datei  "C:\DOKUME~1\phil\LOKALE~1\Temp\RSP255.tmp" mit Inhalten
+[
+/nologo /MT /W3 /GX /Zi /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_USRDLL" /D "ION_EXPORTS" /D "_MBCS" /Fo"Release/" /Fd"Release/" PRECOMP_VC7_TOBEREMOVED /c 
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\oisdrv\oisjoystick.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\oisdrv\oiskeyboard.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\oisdrv\oismouse.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\oisdrv\oisserver.cpp"
+]
+Creating command line "cl.exe @C:\DOKUME~1\phil\LOKALE~1\Temp\RSP255.tmp" 
+Erstellen der temporären Datei  "C:\DOKUME~1\phil\LOKALE~1\Temp\RSP256.tmp" mit Inhalten
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ../../../bin/ion.lib ../extern/ois/Release/OIS.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"../../../bin/oisdrv.pdb" /debug /machine:IX86 /out:"../../../bin/oisdrv.dll" /implib:".\../../../bin/oisdrv.lib" /pdbtype:sept /opt:ref /opt:icf 
+".\Release\oisjoystick.obj"
+".\Release\oiskeyboard.obj"
+".\Release\oismouse.obj"
+".\Release\oisserver.obj"
+]
+Erstellen der Befehlzeile "link.exe @C:\DOKUME~1\phil\LOKALE~1\Temp\RSP256.tmp"
+<h3>Ausgabefenster</h3>
+Kompilierung läuft...
+cl : Command line warning D4024 : unrecognized source file type 'PRECOMP_VC7_TOBEREMOVED', object file assumed
+cl : Command line warning D4027 : source file 'PRECOMP_VC7_TOBEREMOVED' ignored
+oisjoystick.cpp
+oiskeyboard.cpp
+oismouse.cpp
+oisserver.cpp
+Generating Code...
+Linker-Vorgang läuft...
+LINK : warning LNK4224: /PDBTYPE is no longer supported;  ignored
+LINK : fatal error LNK1181: cannot open input file '../../../bin/ion.lib'
+Fehler beim Ausführen von link.exe.
+
+
+
+<h3>Ergebnisse</h3>
+oisdrv.dll - 1 Fehler, 3 Warnung(en)
+<h3>
+--------------------Konfiguration: zlib - Win32 Release--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+Erstellen der temporären Datei  "C:\DOKUME~1\phil\LOKALE~1\Temp\RSP257.tmp" mit Inhalten
+[
+/nologo /MT /W3 /GX /Zi /D "WIN32" /D "NDEBUG" /D "_LIB" /D "_MBCS" /Fo"Release/" /Fd"Release/" PRECOMP_VC7_TOBEREMOVED /c 
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\zlib\adler32.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\zlib\compress.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\zlib\crc32.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\zlib\deflate.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\zlib\infback.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\zlib\inffast.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\zlib\inflate.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\zlib\inftrees.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\zlib\trees.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\zlib\uncompr.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\zlib\zutil.c"
+]
+Creating command line "cl.exe @C:\DOKUME~1\phil\LOKALE~1\Temp\RSP257.tmp" 
+Erstellen der temporären Datei  "C:\DOKUME~1\phil\LOKALE~1\Temp\RSP258.tmp" mit Inhalten
+[
+/nologo /out:"Release\zlib.lib" 
+".\Release\adler32.obj"
+".\Release\compress.obj"
+".\Release\crc32.obj"
+".\Release\deflate.obj"
+".\Release\infback.obj"
+".\Release\inffast.obj"
+".\Release\inflate.obj"
+".\Release\inftrees.obj"
+".\Release\trees.obj"
+".\Release\uncompr.obj"
+".\Release\zutil.obj"
+]
+Erstellen der Befehlzeile "link.exe -lib @C:\DOKUME~1\phil\LOKALE~1\Temp\RSP258.tmp"
+<h3>Ausgabefenster</h3>
+Kompilierung läuft...
+cl : Command line warning D4024 : unrecognized source file type 'PRECOMP_VC7_TOBEREMOVED', object file assumed
+cl : Command line warning D4027 : source file 'PRECOMP_VC7_TOBEREMOVED' ignored
+adler32.c
+compress.c
+crc32.c
+deflate.c
+infback.c
+inffast.c
+inflate.c
+inftrees.c
+Generating Code...
+Compiling...
+trees.c
+uncompr.c
+zutil.c
+Generating Code...
+Bibliothek wird erstellt...
+
+
+
+<h3>Ergebnisse</h3>
+zlib.lib - 0 Fehler, 2 Warnung(en)
+<h3>
+--------------------Konfiguration: skelapp - Win32 Release--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+Erstellen der temporären Datei  "C:\DOKUME~1\phil\LOKALE~1\Temp\RSP259.tmp" mit Inhalten
+[
+/nologo /MT /W3 /GX /Zi /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fo"Release/" /Fd"Release/" PRECOMP_VC7_TOBEREMOVED /c 
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\skelapp\cvars.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\skelapp\main.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\skelapp\mycode.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\skelapp\skelapp.cpp"
+]
+Creating command line "cl.exe @C:\DOKUME~1\phil\LOKALE~1\Temp\RSP259.tmp" 
+Erstellen der temporären Datei  "C:\DOKUME~1\phil\LOKALE~1\Temp\RSP25A.tmp" mit Inhalten
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ../../../bin/ion.lib /nologo /subsystem:windows /incremental:no /pdb:"../../../bin/skelapp.pdb" /debug /machine:IX86 /out:"../../../bin/skelapp.exe" /pdbtype:sept /opt:ref /opt:icf 
+".\Release\cvars.obj"
+".\Release\main.obj"
+".\Release\mycode.obj"
+".\Release\skelapp.obj"
+]
+Erstellen der Befehlzeile "link.exe @C:\DOKUME~1\phil\LOKALE~1\Temp\RSP25A.tmp"
+<h3>Ausgabefenster</h3>
+Kompilierung läuft...
+cl : Command line warning D4024 : unrecognized source file type 'PRECOMP_VC7_TOBEREMOVED', object file assumed
+cl : Command line warning D4027 : source file 'PRECOMP_VC7_TOBEREMOVED' ignored
+cvars.cpp
+main.cpp
+mycode.cpp
+skelapp.cpp
+Generating Code...
+Linker-Vorgang läuft...
+LINK : warning LNK4224: /PDBTYPE is no longer supported;  ignored
+LINK : fatal error LNK1181: cannot open input file '../../../bin/ion.lib'
+Fehler beim Ausführen von link.exe.
+
+
+
+<h3>Ergebnisse</h3>
+skelapp.exe - 1 Fehler, 3 Warnung(en)
+<h3>
+--------------------Konfiguration: corona_static - Win32 Release--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+Erstellen der temporären Datei  "C:\DOKUME~1\phil\LOKALE~1\Temp\RSP25B.tmp" mit Inhalten
+[
+/nologo /MT /W3 /GX /Zi /Og /Oi /Oy /Ob1 /Gy /I "../../../extern/zlib" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fo"Release_static/" /Fd"Release_static/" /I /I /I /GF "" ../../../extern/corona/src/libpng-1.2.1"" "" ../../../extern/corona/src/jpeg-6b"" "" ../../../extern/corona/src/libungif-4.1.0"" PRECOMP_VC7_TOBEREMOVED /c 
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\Convert.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\Corona.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\Debug.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\DefaultFileSystem.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\MemoryFile.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\OpenBMP.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\OpenGIF.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\OpenJPEG.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\OpenPCX.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\OpenPNG.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\OpenTGA.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\SavePNG.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\SaveTGA.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\libpng-1.2.1\png.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\libpng-1.2.1\pngerror.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\libpng-1.2.1\pnggccrd.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\libpng-1.2.1\pngget.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\libpng-1.2.1\pngmem.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\libpng-1.2.1\pngpread.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\libpng-1.2.1\pngread.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\libpng-1.2.1\pngrio.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\libpng-1.2.1\pngrtran.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\libpng-1.2.1\pngrutil.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\libpng-1.2.1\pngset.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\libpng-1.2.1\pngtest.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\libpng-1.2.1\pngtrans.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\libpng-1.2.1\pngvcrd.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\libpng-1.2.1\pngwio.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\libpng-1.2.1\pngwrite.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\libpng-1.2.1\pngwtran.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\libpng-1.2.1\pngwutil.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jcapimin.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jcapistd.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jccoefct.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jccolor.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jcdctmgr.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jchuff.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jcinit.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jcmainct.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jcmarker.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jcmaster.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jcomapi.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jcparam.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jcphuff.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jcprepct.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jcsample.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jctrans.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jdapimin.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jdapistd.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jdatadst.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jdatasrc.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jdcoefct.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jdcolor.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jddctmgr.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jdhuff.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jdinput.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jdmainct.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jdmarker.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jdmaster.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jdmerge.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jdphuff.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jdpostct.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jdsample.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jdtrans.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jerror.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jfdctflt.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jfdctfst.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jfdctint.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jidctflt.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jidctfst.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jidctint.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jidctred.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jmemmgr.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jmemnobs.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jquant1.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jquant2.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\jpeg-6b\jutils.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\libungif-4.1.0\dgif_lib.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\libungif-4.1.0\gif_err.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\libungif-4.1.0\gifalloc.c"
+]
+Creating command line "cl.exe @C:\DOKUME~1\phil\LOKALE~1\Temp\RSP25B.tmp" 
+Erstellen der temporären Datei  "C:\DOKUME~1\phil\LOKALE~1\Temp\RSP25C.tmp" mit Inhalten
+[
+/nologo /out:"Release_static\corona_static.lib" 
+".\Release_static\Convert.obj"
+".\Release_static\Corona.obj"
+".\Release_static\Debug.obj"
+".\Release_static\DefaultFileSystem.obj"
+".\Release_static\MemoryFile.obj"
+".\Release_static\OpenBMP.obj"
+".\Release_static\OpenGIF.obj"
+".\Release_static\OpenJPEG.obj"
+".\Release_static\OpenPCX.obj"
+".\Release_static\OpenPNG.obj"
+".\Release_static\OpenTGA.obj"
+".\Release_static\SavePNG.obj"
+".\Release_static\SaveTGA.obj"
+".\Release_static\png.obj"
+".\Release_static\pngerror.obj"
+".\Release_static\pnggccrd.obj"
+".\Release_static\pngget.obj"
+".\Release_static\pngmem.obj"
+".\Release_static\pngpread.obj"
+".\Release_static\pngread.obj"
+".\Release_static\pngrio.obj"
+".\Release_static\pngrtran.obj"
+".\Release_static\pngrutil.obj"
+".\Release_static\pngset.obj"
+".\Release_static\pngtest.obj"
+".\Release_static\pngtrans.obj"
+".\Release_static\pngvcrd.obj"
+".\Release_static\pngwio.obj"
+".\Release_static\pngwrite.obj"
+".\Release_static\pngwtran.obj"
+".\Release_static\pngwutil.obj"
+".\Release_static\jcapimin.obj"
+".\Release_static\jcapistd.obj"
+".\Release_static\jccoefct.obj"
+".\Release_static\jccolor.obj"
+".\Release_static\jcdctmgr.obj"
+".\Release_static\jchuff.obj"
+".\Release_static\jcinit.obj"
+".\Release_static\jcmainct.obj"
+".\Release_static\jcmarker.obj"
+".\Release_static\jcmaster.obj"
+".\Release_static\jcomapi.obj"
+".\Release_static\jcparam.obj"
+".\Release_static\jcphuff.obj"
+".\Release_static\jcprepct.obj"
+".\Release_static\jcsample.obj"
+".\Release_static\jctrans.obj"
+".\Release_static\jdapimin.obj"
+".\Release_static\jdapistd.obj"
+".\Release_static\jdatadst.obj"
+".\Release_static\jdatasrc.obj"
+".\Release_static\jdcoefct.obj"
+".\Release_static\jdcolor.obj"
+".\Release_static\jddctmgr.obj"
+".\Release_static\jdhuff.obj"
+".\Release_static\jdinput.obj"
+".\Release_static\jdmainct.obj"
+".\Release_static\jdmarker.obj"
+".\Release_static\jdmaster.obj"
+".\Release_static\jdmerge.obj"
+".\Release_static\jdphuff.obj"
+".\Release_static\jdpostct.obj"
+".\Release_static\jdsample.obj"
+".\Release_static\jdtrans.obj"
+".\Release_static\jerror.obj"
+".\Release_static\jfdctflt.obj"
+".\Release_static\jfdctfst.obj"
+".\Release_static\jfdctint.obj"
+".\Release_static\jidctflt.obj"
+".\Release_static\jidctfst.obj"
+".\Release_static\jidctint.obj"
+".\Release_static\jidctred.obj"
+".\Release_static\jmemmgr.obj"
+".\Release_static\jmemnobs.obj"
+".\Release_static\jquant1.obj"
+".\Release_static\jquant2.obj"
+".\Release_static\jutils.obj"
+".\Release_static\dgif_lib.obj"
+".\Release_static\gif_err.obj"
+".\Release_static\gifalloc.obj"
+]
+Erstellen der Befehlzeile "link.exe -lib @C:\DOKUME~1\phil\LOKALE~1\Temp\RSP25C.tmp"
+<h3>Ausgabefenster</h3>
+Kompilierung läuft...
+cl : Command line warning D4024 : unrecognized source file type '../../../extern/corona/src/libpng-1.2.1', object file assumed
+cl : Command line warning D4027 : source file '../../../extern/corona/src/libpng-1.2.1' ignored
+cl : Command line warning D4024 : unrecognized source file type '../../../extern/corona/src/jpeg-6b', object file assumed
+cl : Command line warning D4027 : source file '../../../extern/corona/src/jpeg-6b' ignored
+cl : Command line warning D4024 : unrecognized source file type '../../../extern/corona/src/libungif-4.1.0', object file assumed
+cl : Command line warning D4027 : source file '../../../extern/corona/src/libungif-4.1.0' ignored
+cl : Command line warning D4024 : unrecognized source file type 'PRECOMP_VC7_TOBEREMOVED', object file assumed
+cl : Command line warning D4027 : source file 'PRECOMP_VC7_TOBEREMOVED' ignored
+Convert.cpp
+Corona.cpp
+Debug.cpp
+DefaultFileSystem.cpp
+MemoryFile.cpp
+OpenBMP.cpp
+OpenGIF.cpp
+D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\OpenGIF.cpp(4) : fatal error C1083: Cannot open include file: 'gif_lib.h': No such file or directory
+OpenJPEG.cpp
+D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\OpenJPEG.cpp(55) : error C2039: 'client_data' : is not a member of 'jpeg_decompress_struct'
+        D:\Programme\Microsoft Visual Studio\MyProjects\Q3Radiant203b-src\Libs\jpeglib.h(438) : see declaration of 'jpeg_decompress_struct'
+D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\OpenJPEG.cpp(141) : error C2039: 'client_data' : is not a member of 'jpeg_decompress_struct'
+        D:\Programme\Microsoft Visual Studio\MyProjects\Q3Radiant203b-src\Libs\jpeglib.h(438) : see declaration of 'jpeg_decompress_struct'
+D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\OpenJPEG.cpp(179) : error C2039: 'client_data' : is not a member of 'jpeg_common_struct'
+        D:\Programme\Microsoft Visual Studio\MyProjects\Q3Radiant203b-src\Libs\jpeglib.h(284) : see declaration of 'jpeg_common_struct'
+Generating Code...
+Compiling...
+OpenPCX.cpp
+OpenPNG.cpp
+D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\OpenPNG.cpp(8) : fatal error C1083: Cannot open include file: 'png.h': No such file or directory
+OpenTGA.cpp
+SavePNG.cpp
+D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\SavePNG.cpp(2) : fatal error C1083: Cannot open include file: 'png.h': No such file or directory
+SaveTGA.cpp
+D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\corona\src\SaveTGA.cpp(2) : fatal error C1083: Cannot open include file: 'png.h': No such file or directory
+Generating Code...
+Compiling...
+png.c
+pngerror.c
+pnggccrd.c
+pngget.c
+pngmem.c
+pngpread.c
+pngread.c
+pngrio.c
+Generating Code...
+Compiling...
+pngrtran.c
+pngrutil.c
+pngset.c
+pngtest.c
+pngtrans.c
+pngvcrd.c
+pngwio.c
+pngwrite.c
+Generating Code...
+Compiling...
+pngwtran.c
+pngwutil.c
+jcapimin.c
+jcapistd.c
+jccoefct.c
+jccolor.c
+jcdctmgr.c
+jchuff.c
+Generating Code...
+Compiling...
+jcinit.c
+jcmainct.c
+jcmarker.c
+jcmaster.c
+jcomapi.c
+jcparam.c
+jcphuff.c
+jcprepct.c
+Generating Code...
+Compiling...
+jcsample.c
+jctrans.c
+jdapimin.c
+jdapistd.c
+jdatadst.c
+jdatasrc.c
+jdcoefct.c
+jdcolor.c
+Generating Code...
+Compiling...
+jddctmgr.c
+jdhuff.c
+jdinput.c
+jdmainct.c
+jdmarker.c
+jdmaster.c
+jdmerge.c
+jdphuff.c
+Generating Code...
+Compiling...
+jdpostct.c
+jdsample.c
+jdtrans.c
+jerror.c
+jfdctflt.c
+jfdctfst.c
+jfdctint.c
+jidctflt.c
+Generating Code...
+Compiling...
+jidctfst.c
+jidctint.c
+jidctred.c
+jmemmgr.c
+jmemnobs.c
+jquant1.c
+jquant2.c
+jutils.c
+Generating Code...
+Compiling...
+dgif_lib.c
+gif_err.c
+gifalloc.c
+Generating Code...
+Fehler beim Ausführen von cl.exe.
+
+
+
+<h3>Ergebnisse</h3>
+corona_static.lib - 7 Fehler, 8 Warnung(en)
+<h3>
+--------------------Konfiguration: glew_static - Win32 Release--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+Erstellen der temporären Datei  "C:\DOKUME~1\phil\LOKALE~1\Temp\RSP25D.tmp" mit Inhalten
+[
+/nologo /MT /W3 /GX /O2 /I "../../../extern/glew/include" /D "WIN32" /D "NDEBUG" /D "_LIB" /D "WIN32_LEAN_AND_MEAN" /D "VC_EXTRALEAN" /D "GLEW_STATIC" /D "_MBCS" /Fp"./static/release/glew_static.pch" /YX /Fo"./static/release/" /GF /c 
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\glew\src\glew.c"
+]
+Creating command line "cl.exe @C:\DOKUME~1\phil\LOKALE~1\Temp\RSP25D.tmp" 
+Erstellen der Befehlzeile "link.exe -lib /nologo /out:".\static\release\glew32s.lib"  ".\static\release\glew.obj" "
+<h3>Ausgabefenster</h3>
+Kompilierung läuft...
+glew.c
+Bibliothek wird erstellt...
+
+
+
+<h3>Ergebnisse</h3>
+glew32s.lib - 0 Fehler, 0 Warnung(en)
+<h3>
+--------------------Konfiguration: OIS - Win32 Release--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+Erstellen der temporären Datei  "C:\DOKUME~1\phil\LOKALE~1\Temp\RSP25E.tmp" mit Inhalten
+[
+/nologo /MT /W3 /GX /Zi /O2 /I "../../../extern/ois/includes" /D "WIN32" /D "NDEBUG" /D "_LIB" /D "_MBCS" /Fo"Release/" /Fd"Release/" /GF PRECOMP_VC7_TOBEREMOVED /c 
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\ois\src\OISEffect.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\ois\src\OISForceFeedback.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\ois\src\OISInputManager.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\ois\src\OISKeyboard.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\ois\src\OISObject.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\ois\src\win32\Win32ForceFeedback.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\ois\src\win32\Win32InputManager.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\ois\src\win32\Win32JoyStick.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\ois\src\win32\Win32KeyBoard.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\ois\src\win32\Win32Mouse.cpp"
+]
+Creating command line "cl.exe @C:\DOKUME~1\phil\LOKALE~1\Temp\RSP25E.tmp" 
+Erstellen der temporären Datei  "C:\DOKUME~1\phil\LOKALE~1\Temp\RSP25F.tmp" mit Inhalten
+[
+/nologo /out:"Release\OIS.lib" 
+".\Release\OISEffect.obj"
+".\Release\OISForceFeedback.obj"
+".\Release\OISInputManager.obj"
+".\Release\OISKeyboard.obj"
+".\Release\OISObject.obj"
+".\Release\Win32ForceFeedback.obj"
+".\Release\Win32InputManager.obj"
+".\Release\Win32JoyStick.obj"
+".\Release\Win32KeyBoard.obj"
+".\Release\Win32Mouse.obj"
+]
+Erstellen der Befehlzeile "link.exe -lib @C:\DOKUME~1\phil\LOKALE~1\Temp\RSP25F.tmp"
+<h3>Ausgabefenster</h3>
+Kompilierung läuft...
+cl : Command line warning D4024 : unrecognized source file type 'PRECOMP_VC7_TOBEREMOVED', object file assumed
+cl : Command line warning D4027 : source file 'PRECOMP_VC7_TOBEREMOVED' ignored
+OISEffect.cpp
+OISForceFeedback.cpp
+OISInputManager.cpp
+OISKeyboard.cpp
+OISObject.cpp
+Win32ForceFeedback.cpp
+Win32InputManager.cpp
+Win32JoyStick.cpp
+Generating Code...
+Compiling...
+Win32KeyBoard.cpp
+Win32Mouse.cpp
+Generating Code...
+Bibliothek wird erstellt...
+
+
+
+<h3>Ergebnisse</h3>
+OIS.lib - 0 Fehler, 2 Warnung(en)
+<h3>
+--------------------Konfiguration: tinyxmlSTL - Win32 Release--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+Erstellen der temporären Datei  "C:\DOKUME~1\phil\LOKALE~1\Temp\RSP260.tmp" mit Inhalten
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_LIB" /D "TIXML_USE_STL" /D "_MBCS" /FR".\Release_STL/" /Fo".\Release_STL/" /GF /c 
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\tinyxml\tinyxml.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\tinyxml\tinyxmlerror.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\tinyxml\tinyxmlparser.cpp"
+]
+Creating command line "cl.exe @C:\DOKUME~1\phil\LOKALE~1\Temp\RSP260.tmp" 
+Erstellen der Befehlzeile "link.exe -lib /nologo /out:".\Release_STL\tinyxml_STL.lib"  ".\Release_STL\tinyxml.obj" ".\Release_STL\tinyxmlerror.obj" ".\Release_STL\tinyxmlparser.obj" "
+<h3>Ausgabefenster</h3>
+Kompilierung läuft...
+tinyxml.cpp
+tinyxmlerror.cpp
+tinyxmlparser.cpp
+Generating Code...
+Bibliothek wird erstellt...
+
+
+
+<h3>Ergebnisse</h3>
+tinyxml_STL.lib - 0 Fehler, 0 Warnung(en)
+<h3>
+--------------------Konfiguration: libbz2 - Win32 Release--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+Erstellen der temporären Datei  "C:\DOKUME~1\phil\LOKALE~1\Temp\RSP261.tmp" mit Inhalten
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /Fo".\Release/" /GF PRECOMP_VC7_TOBEREMOVED /c 
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\bzip2\blocksort.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\bzip2\bzlib.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\bzip2\compress.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\bzip2\crctable.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\bzip2\decompress.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\bzip2\huffman.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\bzip2\randtable.c"
+]
+Creating command line "cl.exe @C:\DOKUME~1\phil\LOKALE~1\Temp\RSP261.tmp" 
+Erstellen der Befehlzeile "link.exe -lib /nologo /out:".\Release\libbz2.lib"  ".\Release\blocksort.obj" ".\Release\bzlib.obj" ".\Release\compress.obj" ".\Release\crctable.obj" ".\Release\decompress.obj" ".\Release\huffman.obj" ".\Release\randtable.obj" "
+<h3>Ausgabefenster</h3>
+Kompilierung läuft...
+cl : Command line warning D4024 : unrecognized source file type 'PRECOMP_VC7_TOBEREMOVED', object file assumed
+cl : Command line warning D4027 : source file 'PRECOMP_VC7_TOBEREMOVED' ignored
+blocksort.c
+bzlib.c
+compress.c
+crctable.c
+decompress.c
+huffman.c
+randtable.c
+Generating Code...
+Bibliothek wird erstellt...
+
+
+
+<h3>Ergebnisse</h3>
+libbz2.lib - 0 Fehler, 2 Warnung(en)
+<h3>
+--------------------Konfiguration: physfs_static - Win32 Release--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+Erstellen der temporären Datei  "C:\DOKUME~1\phil\LOKALE~1\Temp\RSP262.tmp" mit Inhalten
+[
+/nologo /G6 /MT /W3 /GX /O2 /I "../../../extern/physfs" /D "NDEBUG" /D "WIN32" /D "_LIB" /D PHYSFS_SUPPORTS_QPAK=1 /D PHYSFS_SUPPORTS_ZIP=1 /D PHYSFS_SUPPORTS_HOG=1 /D PHYSFS_SUPPORTS_GRP=1 /D PHYSFS_SUPPORTS_WAD=1 /D PHYSFS_SUPPORTS_MVL=1 /D "_MBCS" /Fp".\physfs_static_release/physfs_static.pch" /YX /Fo".\physfs_static_release/" /GF /c 
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\physfs\archivers\dir.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\physfs\globbing.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\physfs\archivers\grp.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\physfs\archivers\hog.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\physfs\archivers\mvl.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\physfs\physfs.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\physfs\physfs_byteorder.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\physfs\archivers\qpak.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\physfs\archivers\wad.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\physfs\platform\win32.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\extern\physfs\archivers\zip.c"
+]
+Creating command line "cl.exe @C:\DOKUME~1\phil\LOKALE~1\Temp\RSP262.tmp" 
+Erstellen der temporären Datei  "C:\DOKUME~1\phil\LOKALE~1\Temp\RSP263.tmp" mit Inhalten
+[
+/nologo /out:".\physfs_static_release\physfs_static.lib" 
+".\physfs_static_release\dir.obj"
+".\physfs_static_release\globbing.obj"
+".\physfs_static_release\grp.obj"
+".\physfs_static_release\hog.obj"
+".\physfs_static_release\mvl.obj"
+".\physfs_static_release\physfs.obj"
+".\physfs_static_release\physfs_byteorder.obj"
+".\physfs_static_release\qpak.obj"
+".\physfs_static_release\wad.obj"
+".\physfs_static_release\win32.obj"
+".\physfs_static_release\zip.obj"
+]
+Erstellen der Befehlzeile "link.exe -lib @C:\DOKUME~1\phil\LOKALE~1\Temp\RSP263.tmp"
+<h3>Ausgabefenster</h3>
+Kompilierung läuft...
+dir.c
+globbing.c
+grp.c
+hog.c
+mvl.c
+physfs.c
+physfs_byteorder.c
+qpak.c
+wad.c
+win32.c
+zip.c
+Bibliothek wird erstellt...
+
+
+
+<h3>Ergebnisse</h3>
+physfs_static.lib - 0 Fehler, 0 Warnung(en)
+<h3>
+--------------------Konfiguration: fmoddrv - Win32 Release--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+Erstellen der temporären Datei  "C:\DOKUME~1\phil\LOKALE~1\Temp\RSP264.tmp" mit Inhalten
+[
+/nologo /MT /W3 /GX /Zi /I "../../extern/fmod" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_USRDLL" /D "ION_EXPORTS" /D "_MBCS" /Fo"Release/" /Fd"Release/" PRECOMP_VC7_TOBEREMOVED /c 
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\fmoddrv\fmodaudioserver.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\fmoddrv\fmodsound.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\fmoddrv\fmodvoice.cpp"
+]
+Creating command line "cl.exe @C:\DOKUME~1\phil\LOKALE~1\Temp\RSP264.tmp" 
+Erstellen der temporären Datei  "C:\DOKUME~1\phil\LOKALE~1\Temp\RSP265.tmp" mit Inhalten
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ../../extern/fmod/fmodex_vc.lib ../../../bin/ion.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"../../../bin/fmoddrv.pdb" /debug /machine:IX86 /out:"../../../bin/fmoddrv.dll" /implib:".\../../../bin/fmoddrv.lib" /pdbtype:sept /opt:ref /opt:icf 
+".\Release\fmodaudioserver.obj"
+".\Release\fmodsound.obj"
+".\Release\fmodvoice.obj"
+]
+Erstellen der Befehlzeile "link.exe @C:\DOKUME~1\phil\LOKALE~1\Temp\RSP265.tmp"
+<h3>Ausgabefenster</h3>
+Kompilierung läuft...
+cl : Command line warning D4024 : unrecognized source file type 'PRECOMP_VC7_TOBEREMOVED', object file assumed
+cl : Command line warning D4027 : source file 'PRECOMP_VC7_TOBEREMOVED' ignored
+fmodaudioserver.cpp
+fmodsound.cpp
+fmodvoice.cpp
+Generating Code...
+Linker-Vorgang läuft...
+LINK : warning LNK4224: /PDBTYPE is no longer supported;  ignored
+LINK : fatal error LNK1181: cannot open input file '../../../bin/ion.lib'
+Fehler beim Ausführen von link.exe.
+
+
+
+<h3>Ergebnisse</h3>
+fmoddrv.dll - 1 Fehler, 3 Warnung(en)
+<h3>
+--------------------Konfiguration: ion - Win32 Release--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+Erstellen der temporären Datei  "C:\DOKUME~1\phil\LOKALE~1\Temp\RSP266.tmp" mit Inhalten
+[
+/nologo /MT /W3 /GX /Zi /I "../../extern/bzip2" /I "../../extern/zlib" /I "../../extern/tinyxml" /I "../../extern/corona/src" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_USRDLL" /D "ION_EXPORTS" /D "TIXML_USE_STL" /D "_MBCS" /Fo"Release/" /Fd"Release/" PRECOMP_VC7_TOBEREMOVED /c 
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\audio\audioserver.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\audio\sound.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\audio\voice.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\base\basememobj.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\base\baserefcounted.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\base\bz2pkhandler.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\base\datablock.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\base\dynobject_win32.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\base\fpscalc.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\base\ignorecase.c"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\base\localfile.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\base\localstreamable.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\base\log.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\base\managedmemobj.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\base\nullstream.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\base\numericarrays.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\base\physfsfile.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\base\pkdatablock.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\base\refcounted.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\base\stdoutstream.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\base\stlallocator.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\base\streamable.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\base\string.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\base\stringlist.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\base\timer.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\base\zpkhandler.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\input\inputdevice.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\input\inputserver.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\math\aabbvolume.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\math\arcball.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\math\frustum.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\math\interpolator.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\math\lerp.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\math\matrix.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\math\meshconv.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\math\obbvolume.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\math\plane.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\math\rectangle.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\math\spherevolume.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\math\transform.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\math\vectors.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\scene\camera.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\scene\depthprepassprograms.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\scene\dot3programs.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\scene\dot3renderer.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\scene\dot3shader.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\scene\ffprenderer.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\scene\group.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\scene\indexlist.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\scene\iscloader.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\scene\light.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\scene\lightlist.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\scene\node.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\scene\nodelist.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\scene\pplprograms.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\scene\q3bsp.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\scene\q3shaders.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\scene\renderable.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\scene\renderablelist.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\scene\renderablemesh.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\scene\renderablemeshnode.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\scene\renderer.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\scene\renderjob.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\scene\renderjoblist.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\scene\renderjobqueue.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\scene\renderquery.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\scene\shader.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\scene\simplespace.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\scene\xmlshader.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\video\attributebuffer.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\video\attributetable.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\video\caps.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\video\channeldatatype.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\video\color.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\video\cubemap.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\video\draw2dcache.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\video\font.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\video\indexiterator.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\video\indexstream.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\video\loadobj.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\video\memindexstream.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\video\memvertexstream.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\video\mesh.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\video\occlusionquery.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\video\picbuffer.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\video\picloader.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\video\picsaver.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\video\pixelformat.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\video\program.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\video\programarray.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\video\propertytable.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\video\simplepicbuffer.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\video\stateblock.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\video\texture.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\video\texture2d.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\video\vcache.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\video\vertexformat.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\video\vertexiterator.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\video\vertexstream.cpp"
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\video\videodevice.cpp"
+]
+Creating command line "cl.exe @C:\DOKUME~1\phil\LOKALE~1\Temp\RSP266.tmp" 
+Erstellen der temporären Datei  "C:\DOKUME~1\phil\LOKALE~1\Temp\RSP267.tmp" mit Inhalten
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ../extern/bzip2/Release/libbz2.lib ../extern/zlib/Release/zlib.lib ../extern/physfs/physfs_static_release/physfs_static.lib ../extern/tinyxml/Release_STL/tinyxml_STL.lib ../extern/corona/Release_static/corona_static.lib freetype2110MT.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"../../../bin/ion.pdb" /debug /machine:IX86 /out:"../../../bin/ion.dll" /implib:".\../../../bin/ion.lib" /pdbtype:sept /opt:ref /opt:icf 
+".\Release\audioserver.obj"
+".\Release\sound.obj"
+".\Release\voice.obj"
+".\Release\basememobj.obj"
+".\Release\baserefcounted.obj"
+".\Release\bz2pkhandler.obj"
+".\Release\datablock.obj"
+".\Release\dynobject_win32.obj"
+".\Release\fpscalc.obj"
+".\Release\ignorecase.obj"
+".\Release\localfile.obj"
+".\Release\localstreamable.obj"
+".\Release\log.obj"
+".\Release\managedmemobj.obj"
+".\Release\nullstream.obj"
+".\Release\numericarrays.obj"
+".\Release\physfsfile.obj"
+".\Release\pkdatablock.obj"
+".\Release\refcounted.obj"
+".\Release\stdoutstream.obj"
+".\Release\stlallocator.obj"
+".\Release\streamable.obj"
+".\Release\string.obj"
+".\Release\stringlist.obj"
+".\Release\timer.obj"
+".\Release\zpkhandler.obj"
+".\Release\inputdevice.obj"
+".\Release\inputserver.obj"
+".\Release\aabbvolume.obj"
+".\Release\arcball.obj"
+".\Release\frustum.obj"
+".\Release\interpolator.obj"
+".\Release\lerp.obj"
+".\Release\matrix.obj"
+".\Release\meshconv.obj"
+".\Release\obbvolume.obj"
+".\Release\plane.obj"
+".\Release\rectangle.obj"
+".\Release\spherevolume.obj"
+".\Release\transform.obj"
+".\Release\vectors.obj"
+".\Release\camera.obj"
+".\Release\depthprepassprograms.obj"
+".\Release\dot3programs.obj"
+".\Release\dot3renderer.obj"
+".\Release\dot3shader.obj"
+".\Release\ffprenderer.obj"
+".\Release\group.obj"
+".\Release\indexlist.obj"
+".\Release\iscloader.obj"
+".\Release\light.obj"
+".\Release\lightlist.obj"
+".\Release\node.obj"
+".\Release\nodelist.obj"
+".\Release\pplprograms.obj"
+".\Release\q3bsp.obj"
+".\Release\q3shaders.obj"
+".\Release\renderable.obj"
+".\Release\renderablelist.obj"
+".\Release\renderablemesh.obj"
+".\Release\renderablemeshnode.obj"
+".\Release\renderer.obj"
+".\Release\renderjob.obj"
+".\Release\renderjoblist.obj"
+".\Release\renderjobqueue.obj"
+".\Release\renderquery.obj"
+".\Release\shader.obj"
+".\Release\simplespace.obj"
+".\Release\xmlshader.obj"
+".\Release\attributebuffer.obj"
+".\Release\attributetable.obj"
+".\Release\caps.obj"
+".\Release\channeldatatype.obj"
+".\Release\color.obj"
+".\Release\cubemap.obj"
+".\Release\draw2dcache.obj"
+".\Release\font.obj"
+".\Release\indexiterator.obj"
+".\Release\indexstream.obj"
+".\Release\loadobj.obj"
+".\Release\memindexstream.obj"
+".\Release\memvertexstream.obj"
+".\Release\mesh.obj"
+".\Release\occlusionquery.obj"
+".\Release\picbuffer.obj"
+".\Release\picloader.obj"
+".\Release\picsaver.obj"
+".\Release\pixelformat.obj"
+".\Release\program.obj"
+".\Release\programarray.obj"
+".\Release\propertytable.obj"
+".\Release\simplepicbuffer.obj"
+".\Release\stateblock.obj"
+".\Release\texture.obj"
+".\Release\texture2d.obj"
+".\Release\vcache.obj"
+".\Release\vertexformat.obj"
+".\Release\vertexiterator.obj"
+".\Release\vertexstream.obj"
+".\Release\videodevice.obj"
+".\$(IntDir)\$(InputName)3.obj"
+]
+Erstellen der Befehlzeile "link.exe @C:\DOKUME~1\phil\LOKALE~1\Temp\RSP267.tmp"
+<h3>Ausgabefenster</h3>
+Kompilierung läuft...
+cl : Command line warning D4024 : unrecognized source file type 'PRECOMP_VC7_TOBEREMOVED', object file assumed
+cl : Command line warning D4027 : source file 'PRECOMP_VC7_TOBEREMOVED' ignored
+audioserver.cpp
+sound.cpp
+voice.cpp
+basememobj.cpp
+baserefcounted.cpp
+bz2pkhandler.cpp
+datablock.cpp
+dynobject_win32.cpp
+Generating Code...
+Compiling...
+fpscalc.cpp
+Generating Code...
+Compiling...
+ignorecase.c
+Generating Code...
+Compiling...
+localfile.cpp
+localstreamable.cpp
+log.cpp
+managedmemobj.cpp
+nullstream.cpp
+numericarrays.cpp
+physfsfile.cpp
+pkdatablock.cpp
+Generating Code...
+Compiling...
+refcounted.cpp
+stdoutstream.cpp
+stlallocator.cpp
+streamable.cpp
+string.cpp
+stringlist.cpp
+timer.cpp
+zpkhandler.cpp
+Generating Code...
+Compiling...
+inputdevice.cpp
+inputserver.cpp
+aabbvolume.cpp
+arcball.cpp
+frustum.cpp
+interpolator.cpp
+lerp.cpp
+matrix.cpp
+Generating Code...
+Compiling...
+meshconv.cpp
+obbvolume.cpp
+plane.cpp
+rectangle.cpp
+spherevolume.cpp
+transform.cpp
+vectors.cpp
+camera.cpp
+Generating Code...
+Compiling...
+depthprepassprograms.cpp
+dot3programs.cpp
+dot3renderer.cpp
+dot3shader.cpp
+ffprenderer.cpp
+group.cpp
+indexlist.cpp
+iscloader.cpp
+Generating Code...
+Compiling...
+light.cpp
+lightlist.cpp
+node.cpp
+nodelist.cpp
+pplprograms.cpp
+q3bsp.cpp
+q3shaders.cpp
+renderable.cpp
+Generating Code...
+Compiling...
+renderablelist.cpp
+renderablemesh.cpp
+renderablemeshnode.cpp
+renderer.cpp
+renderjob.cpp
+renderjoblist.cpp
+renderjobqueue.cpp
+renderquery.cpp
+Generating Code...
+Compiling...
+shader.cpp
+simplespace.cpp
+xmlshader.cpp
+attributebuffer.cpp
+attributetable.cpp
+caps.cpp
+channeldatatype.cpp
+color.cpp
+Generating Code...
+Compiling...
+cubemap.cpp
+draw2dcache.cpp
+font.cpp
+d:\Programme\Microsoft Visual Studio\CG23_new\src\video\font.hh(11) : fatal error C1083: Cannot open include file: 'ft2build.h': No such file or directory
+indexiterator.cpp
+indexstream.cpp
+loadobj.cpp
+memindexstream.cpp
+memvertexstream.cpp
+Generating Code...
+Compiling...
+mesh.cpp
+occlusionquery.cpp
+picbuffer.cpp
+picloader.cpp
+picsaver.cpp
+pixelformat.cpp
+program.cpp
+programarray.cpp
+Generating Code...
+Compiling...
+propertytable.cpp
+simplepicbuffer.cpp
+stateblock.cpp
+texture.cpp
+texture2d.cpp
+vcache.cpp
+vertexformat.cpp
+vertexiterator.cpp
+Generating Code...
+Compiling...
+vertexstream.cpp
+videodevice.cpp
+Generating Code...
+Fehler beim Ausführen von cl.exe.
+
+
+
+<h3>Ergebnisse</h3>
+ion.dll - 1 Fehler, 2 Warnung(en)
+</pre>
+</body>
+</html>
