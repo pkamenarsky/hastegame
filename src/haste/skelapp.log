@@ -1,0 +1,16 @@
+Working path is D:\Programme\Microsoft Visual Studio\CG23_new\bin
+Scanning for pk3s...
+Found charon3dm4.pk3
+Scanning for pk3s...
+Found charon3dm4.pk3
+
+Shutting down....
+Enabling cursor
+FATAL ERROR : main() : Could not load createVideodeviceInstance() from opengdrv.dll
+
+Shutting down....
+Enabling cursor
+Video dynobject deallocated
+Message : ObjInstanceLogger::dumpStats() : allocated blocks: 0 entries
+Message : ObjInstanceLogger::dumpStats() : allocated array blocks: 0 entries
+Message : ObjInstanceLogger::dumpStats() : Total allocated blocks: 0 entries

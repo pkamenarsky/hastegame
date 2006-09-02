@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1108484698 d:\coding\ion\extern\bzip2\bzlib.c
+	"bzlib_private.h"
+	<fcntl.h>
+	<io.h>
+
+1108484668 d:\coding\ion\extern\bzip2\bzlib_private.h
+	<stdlib.h>
+	<stdio.h>
+	<ctype.h>
+	<string.h>
+	"bzlib.h"
+
+1108484580 d:\coding\ion\extern\bzip2\bzlib.h
+	<stdio.h>
+	<windows.h>
+
+1108484604 d:\coding\ion\extern\bzip2\compress.c
+	"bzlib_private.h"
+
+1108484624 d:\coding\ion\extern\bzip2\crctable.c
+	"bzlib_private.h"
+
+1108484608 d:\coding\ion\extern\bzip2\decompress.c
+	"bzlib_private.h"
+
+1108484614 d:\coding\ion\extern\bzip2\huffman.c
+	"bzlib_private.h"
+
+1108484628 d:\coding\ion\extern\bzip2\randtable.c
+	"bzlib_private.h"
+
+1108484378 d:\coding\ion\extern\bzip2\blocksort.c
+	"bzlib_private.h"
+

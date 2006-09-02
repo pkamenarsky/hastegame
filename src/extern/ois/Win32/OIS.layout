@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE CodeBlocks_layout_file>
+<CodeBlocks_layout_file>
+	<File name="..\includes\OISConfig.h" open="0" top="0">
+		<Cursor position="1176" topLine="12"/>
+	</File>
+	<File name="..\includes\OISEffect.h" open="0" top="0">
+		<Cursor position="7283" topLine="204"/>
+	</File>
+	<File name="..\includes\OISInterface.h" open="0" top="0">
+		<Cursor position="1052" topLine="5"/>
+	</File>
+	<File name="..\includes\OISPrereqs.h" open="0" top="0">
+		<Cursor position="4392" topLine="114"/>
+	</File>
+	<File name="..\src\win32\Win32JoyStick.cpp" open="0" top="0">
+		<Cursor position="7738" topLine="211"/>
+	</File>
+	<File name="..\src\win32\Win32Mouse.cpp" open="0" top="0">
+		<Cursor position="3583" topLine="83"/>
+	</File>
+</CodeBlocks_layout_file>

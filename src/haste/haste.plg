@@ -1,0 +1,468 @@
+<html>
+<body>
+<pre>
+<h1>Erstellungsprotokoll</h1>
+<h3>
+--------------------Konfiguration: haste - Win32 Release--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+Erstellen der temporären Datei  "d:\temp\RSP16B.tmp" mit Inhalten
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/haste.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Programme\Microsoft Visual Studio\CG23_new\src\haste\skelapp.cpp"
+]
+Creating command line "cl.exe @d:\temp\RSP16B.tmp" 
+Erstellen der temporären Datei  "d:\temp\RSP16C.tmp" mit Inhalten
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ../../bin/ion.lib ../extern/newton/newton.lib /nologo /subsystem:windows /incremental:no /pdb:"../../bin/haste.pdb" /machine:I386 /out:"../../bin/haste.exe" 
+".\Release\common.obj"
+".\Release\console.obj"
+".\Release\cvars.obj"
+".\Release\eexport.obj"
+".\Release\g_audio.obj"
+".\Release\g_entity.obj"
+".\Release\g_game.obj"
+".\Release\g_physics.obj"
+".\Release\g_ui.obj"
+".\Release\input.obj"
+".\Release\mycode.obj"
+".\Release\r_hud.obj"
+".\Release\trace.obj"
+".\Release\entity.obj"
+".\Release\ent_func_fovwarp.obj"
+".\Release\ent_grenade.obj"
+".\Release\ent_haste.obj"
+".\Release\ent_info_player_deathmatch.obj"
+".\Release\ent_light.obj"
+".\Release\ent_phys_model.obj"
+".\Release\ent_player.obj"
+".\Release\ent_rocket.obj"
+".\Release\ent_trigger_exit.obj"
+".\Release\ent_trigger_push.obj"
+".\Release\ent_trigger_restart.obj"
+".\Release\ent_trigger_timer.obj"
+".\Release\ent_weapon_grenadelauncher.obj"
+".\Release\ent_weapon_rocketlauncher.obj"
+".\Release\main.obj"
+".\Release\skelapp.obj"
+]
+Erstellen der Befehlzeile "link.exe @d:\temp\RSP16C.tmp"
+<h3>Ausgabefenster</h3>
+Kompilierung läuft...
+skelapp.cpp
+D:\Programme\Microsoft Visual Studio\CG23_new\src\haste\skelapp.cpp(28) : warning C4101: 'a' : unreferenced local variable
+Linker-Vorgang läuft...
+libcpmt.lib(xlock.obj) : warning LNK4078: multiple '.CRT' sections found with different attributes (C0300040)
+libcpmt.lib(locale0.obj) : error LNK2005: "public: class std::locale::facet const * __thiscall std::locale::_Getfacet(unsigned int)const " (?_Getfacet@locale@std@@QBEPBVfacet@12@I@Z) already defined in cvars.obj
+libcpmt.lib(locale0.obj) : error LNK2005: "public: void __thiscall std::locale::facet::_Register(void)" (?_Register@facet@locale@std@@QAEXXZ) already defined in cvars.obj
+libcpmt.lib(locale0.obj) : error LNK2005: "public: __thiscall std::_Locinfo::~_Locinfo(void)" (??1_Locinfo@std@@QAE@XZ) already defined in cvars.obj
+libcpmt.lib(locale0.obj) : error LNK2005: "public: __thiscall std::_Locinfo::_Locinfo(char const *)" (??0_Locinfo@std@@QAE@PBD@Z) already defined in cvars.obj
+libcpmt.lib(locale0.obj) : error LNK2005: "public: __thiscall std::locale::locale(void)" (??0locale@std@@QAE@XZ) already defined in cvars.obj
+libcpmt.lib(locale0.obj) : error LNK2005: "public: static unsigned int const std::ctype<char>::table_size" (?table_size@?$ctype@D@std@@2IB) already defined in common.obj
+libcpmt.lib(ios.obj) : error LNK2005: "public: virtual __thiscall std::ios_base::~ios_base(void)" (??1ios_base@std@@UAE@XZ) already defined in cvars.obj
+libcpmt.lib(ios.obj) : error LNK2005: "public: void __thiscall std::ios_base::clear(int,bool)" (?clear@ios_base@std@@QAEXH_N@Z) already defined in cvars.obj
+libcpmt.lib(ios.obj) : error LNK2005: "protected: void __thiscall std::ios_base::_Init(void)" (?_Init@ios_base@std@@IAEXXZ) already defined in cvars.obj
+ent_player.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(char const * const &)" (??0exception@std@@QAE@ABQBD@Z)
+ent_rocket.obj : error LNK2019: unresolved external symbol "public: __thiscall std::exception::exception(char const * const &)" (??0exception@std@@QAE@ABQBD@Z) referenced in function "public: __thiscall std::bad_alloc::bad_alloc(char const *)" (??0bad_alloc@std@@QAE@PBD@Z)
+ent_trigger_push.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(char const * const &)" (??0exception@std@@QAE@ABQBD@Z)
+main.obj : error LNK2019: unresolved external symbol "public: __thiscall std::exception::exception(char const * const &)" (??0exception@std@@QAE@ABQBD@Z) referenced in function "public: __thiscall std::bad_alloc::bad_alloc(char const *)" (??0bad_alloc@std@@QAE@PBD@Z)
+ent_func_fovwarp.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(char const * const &)" (??0exception@std@@QAE@ABQBD@Z)
+ent_grenade.obj : error LNK2019: unresolved external symbol "public: __thiscall std::exception::exception(char const * const &)" (??0exception@std@@QAE@ABQBD@Z) referenced in function "public: __thiscall std::bad_alloc::bad_alloc(char const *)" (??0bad_alloc@std@@QAE@PBD@Z)
+ent_light.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(char const * const &)" (??0exception@std@@QAE@ABQBD@Z)
+ent_phys_model.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(char const * const &)" (??0exception@std@@QAE@ABQBD@Z)
+input.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(char const * const &)" (??0exception@std@@QAE@ABQBD@Z)
+mycode.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(char const * const &)" (??0exception@std@@QAE@ABQBD@Z)
+r_hud.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(char const * const &)" (??0exception@std@@QAE@ABQBD@Z)
+entity.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(char const * const &)" (??0exception@std@@QAE@ABQBD@Z)
+g_entity.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(char const * const &)" (??0exception@std@@QAE@ABQBD@Z)
+g_game.obj : error LNK2019: unresolved external symbol "public: __thiscall std::exception::exception(char const * const &)" (??0exception@std@@QAE@ABQBD@Z) referenced in function "public: __thiscall std::bad_alloc::bad_alloc(char const *)" (??0bad_alloc@std@@QAE@PBD@Z)
+g_physics.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(char const * const &)" (??0exception@std@@QAE@ABQBD@Z)
+g_ui.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(char const * const &)" (??0exception@std@@QAE@ABQBD@Z)
+console.obj : error LNK2019: unresolved external symbol "public: __thiscall std::exception::exception(char const * const &)" (??0exception@std@@QAE@ABQBD@Z) referenced in function "public: __thiscall std::bad_alloc::bad_alloc(char const *)" (??0bad_alloc@std@@QAE@PBD@Z)
+cvars.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(char const * const &)" (??0exception@std@@QAE@ABQBD@Z)
+eexport.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(char const * const &)" (??0exception@std@@QAE@ABQBD@Z)
+g_audio.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(char const * const &)" (??0exception@std@@QAE@ABQBD@Z)
+ent_player.obj : error LNK2001: unresolved external symbol "public: virtual char const * __thiscall std::exception::what(void)const " (?what@exception@std@@UBEPBDXZ)
+ent_rocket.obj : error LNK2001: unresolved external symbol "public: virtual char const * __thiscall std::exception::what(void)const " (?what@exception@std@@UBEPBDXZ)
+ent_trigger_push.obj : error LNK2001: unresolved external symbol "public: virtual char const * __thiscall std::exception::what(void)const " (?what@exception@std@@UBEPBDXZ)
+main.obj : error LNK2001: unresolved external symbol "public: virtual char const * __thiscall std::exception::what(void)const " (?what@exception@std@@UBEPBDXZ)
+ent_func_fovwarp.obj : error LNK2001: unresolved external symbol "public: virtual char const * __thiscall std::exception::what(void)const " (?what@exception@std@@UBEPBDXZ)
+ent_grenade.obj : error LNK2001: unresolved external symbol "public: virtual char const * __thiscall std::exception::what(void)const " (?what@exception@std@@UBEPBDXZ)
+ent_light.obj : error LNK2001: unresolved external symbol "public: virtual char const * __thiscall std::exception::what(void)const " (?what@exception@std@@UBEPBDXZ)
+ent_phys_model.obj : error LNK2001: unresolved external symbol "public: virtual char const * __thiscall std::exception::what(void)const " (?what@exception@std@@UBEPBDXZ)
+input.obj : error LNK2001: unresolved external symbol "public: virtual char const * __thiscall std::exception::what(void)const " (?what@exception@std@@UBEPBDXZ)
+mycode.obj : error LNK2019: unresolved external symbol "public: virtual char const * __thiscall std::exception::what(void)const " (?what@exception@std@@UBEPBDXZ) referenced in function "public: virtual __thiscall std::bad_alloc::~bad_alloc(void)" (??1bad_alloc@std@@UAE@XZ)
+r_hud.obj : error LNK2001: unresolved external symbol "public: virtual char const * __thiscall std::exception::what(void)const " (?what@exception@std@@UBEPBDXZ)
+entity.obj : error LNK2001: unresolved external symbol "public: virtual char const * __thiscall std::exception::what(void)const " (?what@exception@std@@UBEPBDXZ)
+g_entity.obj : error LNK2001: unresolved external symbol "public: virtual char const * __thiscall std::exception::what(void)const " (?what@exception@std@@UBEPBDXZ)
+g_game.obj : error LNK2001: unresolved external symbol "public: virtual char const * __thiscall std::exception::what(void)const " (?what@exception@std@@UBEPBDXZ)
+g_physics.obj : error LNK2001: unresolved external symbol "public: virtual char const * __thiscall std::exception::what(void)const " (?what@exception@std@@UBEPBDXZ)
+g_ui.obj : error LNK2001: unresolved external symbol "public: virtual char const * __thiscall std::exception::what(void)const " (?what@exception@std@@UBEPBDXZ)
+console.obj : error LNK2001: unresolved external symbol "public: virtual char const * __thiscall std::exception::what(void)const " (?what@exception@std@@UBEPBDXZ)
+cvars.obj : error LNK2001: unresolved external symbol "public: virtual char const * __thiscall std::exception::what(void)const " (?what@exception@std@@UBEPBDXZ)
+eexport.obj : error LNK2001: unresolved external symbol "public: virtual char const * __thiscall std::exception::what(void)const " (?what@exception@std@@UBEPBDXZ)
+g_audio.obj : error LNK2001: unresolved external symbol "public: virtual char const * __thiscall std::exception::what(void)const " (?what@exception@std@@UBEPBDXZ)
+ent_player.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall std::exception::~exception(void)" (??1exception@std@@UAE@XZ)
+ent_rocket.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall std::exception::~exception(void)" (??1exception@std@@UAE@XZ)
+ent_trigger_push.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall std::exception::~exception(void)" (??1exception@std@@UAE@XZ)
+main.obj : error LNK2019: unresolved external symbol "public: virtual __thiscall std::exception::~exception(void)" (??1exception@std@@UAE@XZ) referenced in function "public: virtual __thiscall std::bad_alloc::~bad_alloc(void)" (??1bad_alloc@std@@UAE@XZ)
+ent_func_fovwarp.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall std::exception::~exception(void)" (??1exception@std@@UAE@XZ)
+ent_grenade.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall std::exception::~exception(void)" (??1exception@std@@UAE@XZ)
+ent_light.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall std::exception::~exception(void)" (??1exception@std@@UAE@XZ)
+ent_phys_model.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall std::exception::~exception(void)" (??1exception@std@@UAE@XZ)
+input.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall std::exception::~exception(void)" (??1exception@std@@UAE@XZ)
+mycode.obj : error LNK2019: unresolved external symbol "public: virtual __thiscall std::exception::~exception(void)" (??1exception@std@@UAE@XZ) referenced in function "public: virtual void * __thiscall std::bad_alloc::`scalar deleting destructor'(unsigned int)" (??_Gbad_alloc@std@@UAEPAXI@Z)
+r_hud.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall std::exception::~exception(void)" (??1exception@std@@UAE@XZ)
+entity.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall std::exception::~exception(void)" (??1exception@std@@UAE@XZ)
+g_entity.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall std::exception::~exception(void)" (??1exception@std@@UAE@XZ)
+g_game.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall std::exception::~exception(void)" (??1exception@std@@UAE@XZ)
+g_physics.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall std::exception::~exception(void)" (??1exception@std@@UAE@XZ)
+g_ui.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall std::exception::~exception(void)" (??1exception@std@@UAE@XZ)
+console.obj : error LNK2019: unresolved external symbol "public: virtual __thiscall std::exception::~exception(void)" (??1exception@std@@UAE@XZ) referenced in function "public: virtual __thiscall std::bad_alloc::~bad_alloc(void)" (??1bad_alloc@std@@UAE@XZ)
+cvars.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall std::exception::~exception(void)" (??1exception@std@@UAE@XZ)
+eexport.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall std::exception::~exception(void)" (??1exception@std@@UAE@XZ)
+g_audio.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall std::exception::~exception(void)" (??1exception@std@@UAE@XZ)
+ent_player.obj : error LNK2001: unresolved external symbol _memcpy_s
+ent_rocket.obj : error LNK2001: unresolved external symbol _memcpy_s
+ent_trigger_push.obj : error LNK2019: unresolved external symbol _memcpy_s referenced in function "public: static char * __cdecl std::char_traits<char>::_Move_s(char *,unsigned int,char const *,unsigned int)" (?_Move_s@?$char_traits@D@std@@SAPADPADIPBDI@Z)
+main.obj : error LNK2019: unresolved external symbol _memcpy_s referenced in function "public: static char * __cdecl std::char_traits<char>::_Copy_s(char *,unsigned int,char const *,unsigned int)" (?_Copy_s@?$char_traits@D@std@@SAPADPADIPBDI@Z)
+ent_func_fovwarp.obj : error LNK2019: unresolved external symbol _memcpy_s referenced in function "public: static char * __cdecl std::char_traits<char>::_Move_s(char *,unsigned int,char const *,unsigned int)" (?_Move_s@?$char_traits@D@std@@SAPADPADIPBDI@Z)
+ent_grenade.obj : error LNK2001: unresolved external symbol _memcpy_s
+ent_light.obj : error LNK2001: unresolved external symbol _memcpy_s
+ent_phys_model.obj : error LNK2019: unresolved external symbol _memcpy_s referenced in function "public: static char * __cdecl std::char_traits<char>::_Move_s(char *,unsigned int,char const *,unsigned int)" (?_Move_s@?$char_traits@D@std@@SAPADPADIPBDI@Z)
+input.obj : error LNK2019: unresolved external symbol _memcpy_s referenced in function "public: static char * __cdecl std::char_traits<char>::_Move_s(char *,unsigned int,char const *,unsigned int)" (?_Move_s@?$char_traits@D@std@@SAPADPADIPBDI@Z)
+mycode.obj : error LNK2019: unresolved external symbol _memcpy_s referenced in function "public: static char * __cdecl std::char_traits<char>::_Move_s(char *,unsigned int,char const *,unsigned int)" (?_Move_s@?$char_traits@D@std@@SAPADPADIPBDI@Z)
+r_hud.obj : error LNK2001: unresolved external symbol _memcpy_s
+entity.obj : error LNK2001: unresolved external symbol _memcpy_s
+g_entity.obj : error LNK2001: unresolved external symbol _memcpy_s
+g_game.obj : error LNK2001: unresolved external symbol _memcpy_s
+g_physics.obj : error LNK2001: unresolved external symbol _memcpy_s
+g_ui.obj : error LNK2001: unresolved external symbol _memcpy_s
+console.obj : error LNK2019: unresolved external symbol _memcpy_s referenced in function "public: static char * __cdecl std::char_traits<char>::_Copy_s(char *,unsigned int,char const *,unsigned int)" (?_Copy_s@?$char_traits@D@std@@SAPADPADIPBDI@Z)
+cvars.obj : error LNK2001: unresolved external symbol _memcpy_s
+eexport.obj : error LNK2001: unresolved external symbol _memcpy_s
+g_audio.obj : error LNK2001: unresolved external symbol _memcpy_s
+ent_player.obj : error LNK2001: unresolved external symbol _memmove_s
+ent_rocket.obj : error LNK2019: unresolved external symbol _memmove_s referenced in function "public: static char * __cdecl std::char_traits<char>::_Copy_s(char *,unsigned int,char const *,unsigned int)" (?_Copy_s@?$char_traits@D@std@@SAPADPADIPBDI@Z)
+ent_trigger_push.obj : error LNK2001: unresolved external symbol _memmove_s
+main.obj : error LNK2019: unresolved external symbol _memmove_s referenced in function "public: static char const * __cdecl std::char_traits<char>::find(char const *,unsigned int,char const &)" (?find@?$char_traits@D@std@@SAPBDPBDIABD@Z)
+ent_func_fovwarp.obj : error LNK2001: unresolved external symbol _memmove_s
+ent_grenade.obj : error LNK2019: unresolved external symbol _memmove_s referenced in function "public: static char * __cdecl std::char_traits<char>::_Copy_s(char *,unsigned int,char const *,unsigned int)" (?_Copy_s@?$char_traits@D@std@@SAPADPADIPBDI@Z)
+ent_light.obj : error LNK2001: unresolved external symbol _memmove_s
+ent_phys_model.obj : error LNK2019: unresolved external symbol _memmove_s referenced in function "public: static char * __cdecl std::char_traits<char>::assign(char *,unsigned int,char)" (?assign@?$char_traits@D@std@@SAPADPADID@Z)
+input.obj : error LNK2019: unresolved external symbol _memmove_s referenced in function "class ion::base::Streamable & __cdecl ion::base::operator<<(class ion::base::Streamable &,char const *)" (??6base@ion@@YAAAVStreamable@01@AAV201@PBD@Z)
+mycode.obj : error LNK2001: unresolved external symbol _memmove_s
+r_hud.obj : error LNK2001: unresolved external symbol _memmove_s
+entity.obj : error LNK2001: unresolved external symbol _memmove_s
+g_entity.obj : error LNK2001: unresolved external symbol _memmove_s
+g_game.obj : error LNK2001: unresolved external symbol _memmove_s
+g_physics.obj : error LNK2001: unresolved external symbol _memmove_s
+g_ui.obj : error LNK2001: unresolved external symbol _memmove_s
+console.obj : error LNK2019: unresolved external symbol _memmove_s referenced in function "public: static char * __cdecl std::char_traits<char>::_Move_s(char *,unsigned int,char const *,unsigned int)" (?_Move_s@?$char_traits@D@std@@SAPADPADIPBDI@Z)
+cvars.obj : error LNK2001: unresolved external symbol _memmove_s
+eexport.obj : error LNK2019: unresolved external symbol _memmove_s referenced in function __unwindfunclet$??0EngineExport@@QAE@PAVQ3BSP@scene@ion@@PAVRenderer@23@PAVAudioserver@audio@3@@Z$0
+g_audio.obj : error LNK2001: unresolved external symbol _memmove_s
+ent_weapon_grenadelauncher.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+ent_weapon_rocketlauncher.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+main.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+ent_trigger_exit.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+ent_trigger_push.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+ent_trigger_restart.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+ent_trigger_timer.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+ent_light.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+ent_phys_model.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+ent_player.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+ent_rocket.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+ent_func_fovwarp.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+ent_grenade.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+ent_haste.obj : error LNK2019: unresolved external symbol ___CxxFrameHandler3 referenced in function "public: virtual void __thiscall EntHaste::Think(void)" (?Think@EntHaste@@UAEXXZ)
+ent_info_player_deathmatch.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+input.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+mycode.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+r_hud.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+entity.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+g_entity.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+g_game.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+g_physics.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+g_ui.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+console.obj : error LNK2019: unresolved external symbol ___CxxFrameHandler3 referenced in function __ehhandler$?C_Draw@@YAXHHPAVFont@video@ion@@@Z
+cvars.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+eexport.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+g_audio.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+ent_player.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(class std::exception const &)" (??0exception@std@@QAE@ABV01@@Z)
+ent_rocket.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(class std::exception const &)" (??0exception@std@@QAE@ABV01@@Z)
+ent_trigger_push.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(class std::exception const &)" (??0exception@std@@QAE@ABV01@@Z)
+main.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(class std::exception const &)" (??0exception@std@@QAE@ABV01@@Z)
+ent_func_fovwarp.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(class std::exception const &)" (??0exception@std@@QAE@ABV01@@Z)
+ent_grenade.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(class std::exception const &)" (??0exception@std@@QAE@ABV01@@Z)
+ent_light.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(class std::exception const &)" (??0exception@std@@QAE@ABV01@@Z)
+ent_phys_model.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(class std::exception const &)" (??0exception@std@@QAE@ABV01@@Z)
+input.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(class std::exception const &)" (??0exception@std@@QAE@ABV01@@Z)
+mycode.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(class std::exception const &)" (??0exception@std@@QAE@ABV01@@Z)
+r_hud.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(class std::exception const &)" (??0exception@std@@QAE@ABV01@@Z)
+entity.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(class std::exception const &)" (??0exception@std@@QAE@ABV01@@Z)
+g_entity.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(class std::exception const &)" (??0exception@std@@QAE@ABV01@@Z)
+g_game.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(class std::exception const &)" (??0exception@std@@QAE@ABV01@@Z)
+g_physics.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(class std::exception const &)" (??0exception@std@@QAE@ABV01@@Z)
+g_ui.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(class std::exception const &)" (??0exception@std@@QAE@ABV01@@Z)
+console.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(class std::exception const &)" (??0exception@std@@QAE@ABV01@@Z)
+cvars.obj : error LNK2019: unresolved external symbol "public: __thiscall std::exception::exception(class std::exception const &)" (??0exception@std@@QAE@ABV01@@Z) referenced in function "public: __thiscall std::ctype_base::ctype_base(unsigned int)" (??0ctype_base@std@@QAE@I@Z)
+eexport.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(class std::exception const &)" (??0exception@std@@QAE@ABV01@@Z)
+g_audio.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(class std::exception const &)" (??0exception@std@@QAE@ABV01@@Z)
+ent_weapon_rocketlauncher.obj : error LNK2019: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ) referenced in function "public: virtual void __thiscall EntWeaponRocketlauncher::Think(void)" (?Think@EntWeaponRocketlauncher@@UAEXXZ)
+main.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ)
+ent_player.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ)
+ent_rocket.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ)
+ent_trigger_push.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ)
+ent_weapon_grenadelauncher.obj : error LNK2019: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ) referenced in function "public: virtual void __thiscall EntWeaponGrenadelauncher::Think(void)" (?Think@EntWeaponGrenadelauncher@@UAEXXZ)
+ent_func_fovwarp.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ)
+ent_grenade.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ)
+ent_light.obj : error LNK2019: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ) referenced in function "public: __thiscall EntLight::EntLight(class EngineExport *)" (??0EntLight@@QAE@PAVEngineExport@@@Z)
+ent_phys_model.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ)
+input.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ)
+mycode.obj : error LNK2019: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ) referenced in function "public: void __thiscall App::init(void)" (?init@App@@QAEXXZ)
+r_hud.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ)
+entity.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ)
+g_entity.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ)
+g_game.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ)
+g_physics.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ)
+g_ui.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ)
+console.obj : error LNK2019: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ) referenced in function "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > & __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::erase(unsigned int,unsigned int)" (?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@II@Z)
+cvars.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ)
+eexport.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ)
+g_audio.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ)
+ent_player.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xlen(void)" (?_Xlen@_String_base@std@@SAXXZ)
+ent_rocket.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xlen(void)" (?_Xlen@_String_base@std@@SAXXZ)
+ent_trigger_push.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xlen(void)" (?_Xlen@_String_base@std@@SAXXZ)
+main.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xlen(void)" (?_Xlen@_String_base@std@@SAXXZ)
+ent_func_fovwarp.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xlen(void)" (?_Xlen@_String_base@std@@SAXXZ)
+ent_grenade.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xlen(void)" (?_Xlen@_String_base@std@@SAXXZ)
+ent_light.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xlen(void)" (?_Xlen@_String_base@std@@SAXXZ)
+ent_phys_model.obj : error LNK2019: unresolved external symbol "public: static void __cdecl std::_String_base::_Xlen(void)" (?_Xlen@_String_base@std@@SAXXZ) referenced in function "public: __thiscall EntPhysModel::EntPhysModel(class EngineExport *)" (??0EntPhysModel@@QAE@PAVEngineExport@@@Z)
+input.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xlen(void)" (?_Xlen@_String_base@std@@SAXXZ)
+mycode.obj : error LNK2019: unresolved external symbol "public: static void __cdecl std::_String_base::_Xlen(void)" (?_Xlen@_String_base@std@@SAXXZ) referenced in function "public: void __thiscall App::init(void)" (?init@App@@QAEXXZ)
+r_hud.obj : error LNK2019: unresolved external symbol "public: static void __cdecl std::_String_base::_Xlen(void)" (?_Xlen@_String_base@std@@SAXXZ) referenced in function __ehhandler$?HUD_Init@@YAXXZ
+entity.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xlen(void)" (?_Xlen@_String_base@std@@SAXXZ)
+g_entity.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xlen(void)" (?_Xlen@_String_base@std@@SAXXZ)
+g_game.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xlen(void)" (?_Xlen@_String_base@std@@SAXXZ)
+g_physics.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xlen(void)" (?_Xlen@_String_base@std@@SAXXZ)
+g_ui.obj : error LNK2019: unresolved external symbol "public: static void __cdecl std::_String_base::_Xlen(void)" (?_Xlen@_String_base@std@@SAXXZ) referenced in function "class ion::base::Streamable & __cdecl ion::base::operator>>(class ion::base::Streamable &,class ion::base::String &)" (??5base@ion@@YAAAVStreamable@01@AAV201@AAVString@01@@Z)
+console.obj : error LNK2019: unresolved external symbol "public: static void __cdecl std::_String_base::_Xlen(void)" (?_Xlen@_String_base@std@@SAXXZ) referenced in function "protected: bool __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::_Grow(unsigned int,bool)" (?_Grow@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@IAE_NI_N@Z)
+cvars.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xlen(void)" (?_Xlen@_String_base@std@@SAXXZ)
+eexport.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xlen(void)" (?_Xlen@_String_base@std@@SAXXZ)
+g_audio.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xlen(void)" (?_Xlen@_String_base@std@@SAXXZ)
+ent_trigger_push.obj : error LNK2001: unresolved external symbol "private: static void __cdecl std::locale::facet::facet_Register(class std::locale::facet *)" (?facet_Register@facet@locale@std@@CAXPAV123@@Z)
+ent_light.obj : error LNK2001: unresolved external symbol "private: static void __cdecl std::locale::facet::facet_Register(class std::locale::facet *)" (?facet_Register@facet@locale@std@@CAXPAV123@@Z)
+ent_phys_model.obj : error LNK2001: unresolved external symbol "private: static void __cdecl std::locale::facet::facet_Register(class std::locale::facet *)" (?facet_Register@facet@locale@std@@CAXPAV123@@Z)
+ent_player.obj : error LNK2019: unresolved external symbol "private: static void __cdecl std::locale::facet::facet_Register(class std::locale::facet *)" (?facet_Register@facet@locale@std@@CAXPAV123@@Z) referenced in function "public: __thiscall std::locale::id::operator unsigned int(void)" (??Bid@locale@std@@QAEIXZ)
+ent_rocket.obj : error LNK2001: unresolved external symbol "private: static void __cdecl std::locale::facet::facet_Register(class std::locale::facet *)" (?facet_Register@facet@locale@std@@CAXPAV123@@Z)
+r_hud.obj : error LNK2001: unresolved external symbol "private: static void __cdecl std::locale::facet::facet_Register(class std::locale::facet *)" (?facet_Register@facet@locale@std@@CAXPAV123@@Z)
+entity.obj : error LNK2001: unresolved external symbol "private: static void __cdecl std::locale::facet::facet_Register(class std::locale::facet *)" (?facet_Register@facet@locale@std@@CAXPAV123@@Z)
+ent_func_fovwarp.obj : error LNK2001: unresolved external symbol "private: static void __cdecl std::locale::facet::facet_Register(class std::locale::facet *)" (?facet_Register@facet@locale@std@@CAXPAV123@@Z)
+ent_grenade.obj : error LNK2001: unresolved external symbol "private: static void __cdecl std::locale::facet::facet_Register(class std::locale::facet *)" (?facet_Register@facet@locale@std@@CAXPAV123@@Z)
+cvars.obj : error LNK2019: unresolved external symbol "private: static void __cdecl std::locale::facet::facet_Register(class std::locale::facet *)" (?facet_Register@facet@locale@std@@CAXPAV123@@Z) referenced in function "public: void __thiscall std::locale::facet::_Register(void)" (?_Register@facet@locale@std@@QAEXXZ)
+g_entity.obj : error LNK2001: unresolved external symbol "private: static void __cdecl std::locale::facet::facet_Register(class std::locale::facet *)" (?facet_Register@facet@locale@std@@CAXPAV123@@Z)
+g_game.obj : error LNK2001: unresolved external symbol "private: static void __cdecl std::locale::facet::facet_Register(class std::locale::facet *)" (?facet_Register@facet@locale@std@@CAXPAV123@@Z)
+g_ui.obj : error LNK2001: unresolved external symbol "private: static void __cdecl std::locale::facet::facet_Register(class std::locale::facet *)" (?facet_Register@facet@locale@std@@CAXPAV123@@Z)
+ent_trigger_push.obj : error LNK2001: unresolved external symbol "private: static class std::locale::_Locimp * __cdecl std::locale::_Getgloballocale(void)" (?_Getgloballocale@locale@std@@CAPAV_Locimp@12@XZ)
+ent_light.obj : error LNK2001: unresolved external symbol "private: static class std::locale::_Locimp * __cdecl std::locale::_Getgloballocale(void)" (?_Getgloballocale@locale@std@@CAPAV_Locimp@12@XZ)
+ent_phys_model.obj : error LNK2001: unresolved external symbol "private: static class std::locale::_Locimp * __cdecl std::locale::_Getgloballocale(void)" (?_Getgloballocale@locale@std@@CAPAV_Locimp@12@XZ)
+ent_player.obj : error LNK2001: unresolved external symbol "private: static class std::locale::_Locimp * __cdecl std::locale::_Getgloballocale(void)" (?_Getgloballocale@locale@std@@CAPAV_Locimp@12@XZ)
+ent_rocket.obj : error LNK2001: unresolved external symbol "private: static class std::locale::_Locimp * __cdecl std::locale::_Getgloballocale(void)" (?_Getgloballocale@locale@std@@CAPAV_Locimp@12@XZ)
+r_hud.obj : error LNK2001: unresolved external symbol "private: static class std::locale::_Locimp * __cdecl std::locale::_Getgloballocale(void)" (?_Getgloballocale@locale@std@@CAPAV_Locimp@12@XZ)
+entity.obj : error LNK2001: unresolved external symbol "private: static class std::locale::_Locimp * __cdecl std::locale::_Getgloballocale(void)" (?_Getgloballocale@locale@std@@CAPAV_Locimp@12@XZ)
+ent_func_fovwarp.obj : error LNK2001: unresolved external symbol "private: static class std::locale::_Locimp * __cdecl std::locale::_Getgloballocale(void)" (?_Getgloballocale@locale@std@@CAPAV_Locimp@12@XZ)
+ent_grenade.obj : error LNK2001: unresolved external symbol "private: static class std::locale::_Locimp * __cdecl std::locale::_Getgloballocale(void)" (?_Getgloballocale@locale@std@@CAPAV_Locimp@12@XZ)
+cvars.obj : error LNK2019: unresolved external symbol "private: static class std::locale::_Locimp * __cdecl std::locale::_Getgloballocale(void)" (?_Getgloballocale@locale@std@@CAPAV_Locimp@12@XZ) referenced in function "public: __thiscall std::locale::locale(void)" (??0locale@std@@QAE@XZ)
+g_entity.obj : error LNK2001: unresolved external symbol "private: static class std::locale::_Locimp * __cdecl std::locale::_Getgloballocale(void)" (?_Getgloballocale@locale@std@@CAPAV_Locimp@12@XZ)
+g_game.obj : error LNK2001: unresolved external symbol "private: static class std::locale::_Locimp * __cdecl std::locale::_Getgloballocale(void)" (?_Getgloballocale@locale@std@@CAPAV_Locimp@12@XZ)
+g_ui.obj : error LNK2001: unresolved external symbol "private: static class std::locale::_Locimp * __cdecl std::locale::_Getgloballocale(void)" (?_Getgloballocale@locale@std@@CAPAV_Locimp@12@XZ)
+ent_trigger_push.obj : error LNK2019: unresolved external symbol "private: static void __cdecl std::ios_base::_Ios_base_dtor(class std::ios_base *)" (?_Ios_base_dtor@ios_base@std@@CAXPAV12@@Z) referenced in function __ehhandler$??0EntTriggerPush@@QAE@PAVEngineExport@@@Z
+ent_light.obj : error LNK2019: unresolved external symbol "private: static void __cdecl std::ios_base::_Ios_base_dtor(class std::ios_base *)" (?_Ios_base_dtor@ios_base@std@@CAXPAV12@@Z) referenced in function "public: __thiscall EntLight::EntLight(class EngineExport *)" (??0EntLight@@QAE@PAVEngineExport@@@Z)
+ent_phys_model.obj : error LNK2001: unresolved external symbol "private: static void __cdecl std::ios_base::_Ios_base_dtor(class std::ios_base *)" (?_Ios_base_dtor@ios_base@std@@CAXPAV12@@Z)
+ent_player.obj : error LNK2001: unresolved external symbol "private: static void __cdecl std::ios_base::_Ios_base_dtor(class std::ios_base *)" (?_Ios_base_dtor@ios_base@std@@CAXPAV12@@Z)
+ent_rocket.obj : error LNK2001: unresolved external symbol "private: static void __cdecl std::ios_base::_Ios_base_dtor(class std::ios_base *)" (?_Ios_base_dtor@ios_base@std@@CAXPAV12@@Z)
+r_hud.obj : error LNK2001: unresolved external symbol "private: static void __cdecl std::ios_base::_Ios_base_dtor(class std::ios_base *)" (?_Ios_base_dtor@ios_base@std@@CAXPAV12@@Z)
+entity.obj : error LNK2001: unresolved external symbol "private: static void __cdecl std::ios_base::_Ios_base_dtor(class std::ios_base *)" (?_Ios_base_dtor@ios_base@std@@CAXPAV12@@Z)
+ent_func_fovwarp.obj : error LNK2001: unresolved external symbol "private: static void __cdecl std::ios_base::_Ios_base_dtor(class std::ios_base *)" (?_Ios_base_dtor@ios_base@std@@CAXPAV12@@Z)
+ent_grenade.obj : error LNK2001: unresolved external symbol "private: static void __cdecl std::ios_base::_Ios_base_dtor(class std::ios_base *)" (?_Ios_base_dtor@ios_base@std@@CAXPAV12@@Z)
+cvars.obj : error LNK2019: unresolved external symbol "private: static void __cdecl std::ios_base::_Ios_base_dtor(class std::ios_base *)" (?_Ios_base_dtor@ios_base@std@@CAXPAV12@@Z) referenced in function "public: virtual __thiscall std::ios_base::~ios_base(void)" (??1ios_base@std@@UAE@XZ)
+g_entity.obj : error LNK2019: unresolved external symbol "private: static void __cdecl std::ios_base::_Ios_base_dtor(class std::ios_base *)" (?_Ios_base_dtor@ios_base@std@@CAXPAV12@@Z) referenced in function "class ion::base::Streamable & __cdecl ion::base::operator<<(class ion::base::Streamable &,class ion::base::String const &)" (??6base@ion@@YAAAVStreamable@01@AAV201@ABVString@01@@Z)
+g_game.obj : error LNK2001: unresolved external symbol "private: static void __cdecl std::ios_base::_Ios_base_dtor(class std::ios_base *)" (?_Ios_base_dtor@ios_base@std@@CAXPAV12@@Z)
+g_ui.obj : error LNK2019: unresolved external symbol "private: static void __cdecl std::ios_base::_Ios_base_dtor(class std::ios_base *)" (?_Ios_base_dtor@ios_base@std@@CAXPAV12@@Z) referenced in function "class ion::base::Streamable & __cdecl ion::base::operator<<(class ion::base::Streamable &,char const *)" (??6base@ion@@YAAAVStreamable@01@AAV201@PBD@Z)
+ent_weapon_rocketlauncher.obj : error LNK2001: unresolved external symbol __invalid_parameter_noinfo
+ent_player.obj : error LNK2001: unresolved external symbol __invalid_parameter_noinfo
+ent_rocket.obj : error LNK2001: unresolved external symbol __invalid_parameter_noinfo
+ent_trigger_push.obj : error LNK2001: unresolved external symbol __invalid_parameter_noinfo
+ent_weapon_grenadelauncher.obj : error LNK2001: unresolved external symbol __invalid_parameter_noinfo
+ent_func_fovwarp.obj : error LNK2001: unresolved external symbol __invalid_parameter_noinfo
+ent_grenade.obj : error LNK2001: unresolved external symbol __invalid_parameter_noinfo
+ent_light.obj : error LNK2001: unresolved external symbol __invalid_parameter_noinfo
+ent_phys_model.obj : error LNK2001: unresolved external symbol __invalid_parameter_noinfo
+g_ui.obj : error LNK2001: unresolved external symbol __invalid_parameter_noinfo
+input.obj : error LNK2001: unresolved external symbol __invalid_parameter_noinfo
+r_hud.obj : error LNK2001: unresolved external symbol __invalid_parameter_noinfo
+entity.obj : error LNK2019: unresolved external symbol __invalid_parameter_noinfo referenced in function "public: void __thiscall Entity::PlaySoundA(class ion::audio::Sound *)" (?PlaySoundA@Entity@@QAEXPAVSound@audio@ion@@@Z)
+cvars.obj : error LNK2019: unresolved external symbol __invalid_parameter_noinfo referenced in function "public: bool __thiscall std::_Tree<class std::_Tmap_traits<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const ,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >,0> >::const_iterator::operator==(class std::_Tree<class std::_Tmap_traits<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const ,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >,0> >::const_iterator const &)const " (??8const_iterator@?$_Tree@V?$_Tmap_traits@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@@std@@@2@$0A@@std@@@std@@QBE_NABV012@@Z)
+g_audio.obj : error LNK2001: unresolved external symbol __invalid_parameter_noinfo
+g_entity.obj : error LNK2001: unresolved external symbol __invalid_parameter_noinfo
+g_game.obj : error LNK2001: unresolved external symbol __invalid_parameter_noinfo
+ent_trigger_push.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_Locinfo::_Locinfo_dtor(class std::_Locinfo *)" (?_Locinfo_dtor@_Locinfo@std@@SAXPAV12@@Z)
+ent_light.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_Locinfo::_Locinfo_dtor(class std::_Locinfo *)" (?_Locinfo_dtor@_Locinfo@std@@SAXPAV12@@Z)
+ent_phys_model.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_Locinfo::_Locinfo_dtor(class std::_Locinfo *)" (?_Locinfo_dtor@_Locinfo@std@@SAXPAV12@@Z)
+ent_player.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_Locinfo::_Locinfo_dtor(class std::_Locinfo *)" (?_Locinfo_dtor@_Locinfo@std@@SAXPAV12@@Z)
+ent_rocket.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_Locinfo::_Locinfo_dtor(class std::_Locinfo *)" (?_Locinfo_dtor@_Locinfo@std@@SAXPAV12@@Z)
+r_hud.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_Locinfo::_Locinfo_dtor(class std::_Locinfo *)" (?_Locinfo_dtor@_Locinfo@std@@SAXPAV12@@Z)
+entity.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_Locinfo::_Locinfo_dtor(class std::_Locinfo *)" (?_Locinfo_dtor@_Locinfo@std@@SAXPAV12@@Z)
+ent_func_fovwarp.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_Locinfo::_Locinfo_dtor(class std::_Locinfo *)" (?_Locinfo_dtor@_Locinfo@std@@SAXPAV12@@Z)
+ent_grenade.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_Locinfo::_Locinfo_dtor(class std::_Locinfo *)" (?_Locinfo_dtor@_Locinfo@std@@SAXPAV12@@Z)
+cvars.obj : error LNK2019: unresolved external symbol "public: static void __cdecl std::_Locinfo::_Locinfo_dtor(class std::_Locinfo *)" (?_Locinfo_dtor@_Locinfo@std@@SAXPAV12@@Z) referenced in function "public: __thiscall std::_Locinfo::~_Locinfo(void)" (??1_Locinfo@std@@QAE@XZ)
+g_entity.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_Locinfo::_Locinfo_dtor(class std::_Locinfo *)" (?_Locinfo_dtor@_Locinfo@std@@SAXPAV12@@Z)
+g_game.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_Locinfo::_Locinfo_dtor(class std::_Locinfo *)" (?_Locinfo_dtor@_Locinfo@std@@SAXPAV12@@Z)
+g_ui.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_Locinfo::_Locinfo_dtor(class std::_Locinfo *)" (?_Locinfo_dtor@_Locinfo@std@@SAXPAV12@@Z)
+ent_rocket.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(void)" (??0exception@std@@QAE@XZ)
+ent_trigger_push.obj : error LNK2019: unresolved external symbol "public: __thiscall std::exception::exception(void)" (??0exception@std@@QAE@XZ) referenced in function "public: virtual void __thiscall EntTriggerPush::Touch(class Entity &)" (?Touch@EntTriggerPush@@UAEXAAVEntity@@@Z)
+main.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(void)" (??0exception@std@@QAE@XZ)
+ent_grenade.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(void)" (??0exception@std@@QAE@XZ)
+ent_light.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(void)" (??0exception@std@@QAE@XZ)
+ent_phys_model.obj : error LNK2019: unresolved external symbol "public: __thiscall std::exception::exception(void)" (??0exception@std@@QAE@XZ) referenced in function "protected: virtual class std::istreambuf_iterator<char,struct std::char_traits<char> > __thiscall std::num_get<char,class std::istreambuf_iterator<char,struct std::char_traits<char> > >::do_get(class std::istreambuf_iterator<char,struct std::char_traits<char> >,class std::istreambuf_iterator<char,struct std::char_traits<char> >,class std::ios_base &,int &,float &)const " (?do_get@?$num_get@DV?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$istreambuf_iterator@DU?$char_traits@D@std@@@2@V32@0AAVios_base@2@AAHAAM@Z)
+ent_player.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(void)" (??0exception@std@@QAE@XZ)
+g_ui.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(void)" (??0exception@std@@QAE@XZ)
+r_hud.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(void)" (??0exception@std@@QAE@XZ)
+entity.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(void)" (??0exception@std@@QAE@XZ)
+ent_func_fovwarp.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(void)" (??0exception@std@@QAE@XZ)
+cvars.obj : error LNK2019: unresolved external symbol "public: __thiscall std::exception::exception(void)" (??0exception@std@@QAE@XZ) referenced in function "public: __thiscall std::logic_error::logic_error(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0logic_error@std@@QAE@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z)
+g_audio.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(void)" (??0exception@std@@QAE@XZ)
+g_entity.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(void)" (??0exception@std@@QAE@XZ)
+g_game.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(void)" (??0exception@std@@QAE@XZ)
+ent_trigger_push.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_Locinfo::_Locinfo_ctor(class std::_Locinfo *,char const *)" (?_Locinfo_ctor@_Locinfo@std@@SAXPAV12@PBD@Z)
+ent_light.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_Locinfo::_Locinfo_ctor(class std::_Locinfo *,char const *)" (?_Locinfo_ctor@_Locinfo@std@@SAXPAV12@PBD@Z)
+ent_phys_model.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_Locinfo::_Locinfo_ctor(class std::_Locinfo *,char const *)" (?_Locinfo_ctor@_Locinfo@std@@SAXPAV12@PBD@Z)
+ent_player.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_Locinfo::_Locinfo_ctor(class std::_Locinfo *,char const *)" (?_Locinfo_ctor@_Locinfo@std@@SAXPAV12@PBD@Z)
+ent_rocket.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_Locinfo::_Locinfo_ctor(class std::_Locinfo *,char const *)" (?_Locinfo_ctor@_Locinfo@std@@SAXPAV12@PBD@Z)
+r_hud.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_Locinfo::_Locinfo_ctor(class std::_Locinfo *,char const *)" (?_Locinfo_ctor@_Locinfo@std@@SAXPAV12@PBD@Z)
+entity.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_Locinfo::_Locinfo_ctor(class std::_Locinfo *,char const *)" (?_Locinfo_ctor@_Locinfo@std@@SAXPAV12@PBD@Z)
+ent_func_fovwarp.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_Locinfo::_Locinfo_ctor(class std::_Locinfo *,char const *)" (?_Locinfo_ctor@_Locinfo@std@@SAXPAV12@PBD@Z)
+ent_grenade.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_Locinfo::_Locinfo_ctor(class std::_Locinfo *,char const *)" (?_Locinfo_ctor@_Locinfo@std@@SAXPAV12@PBD@Z)
+cvars.obj : error LNK2019: unresolved external symbol "public: static void __cdecl std::_Locinfo::_Locinfo_ctor(class std::_Locinfo *,char const *)" (?_Locinfo_ctor@_Locinfo@std@@SAXPAV12@PBD@Z) referenced in function "public: __thiscall std::_Locinfo::_Locinfo(char const *)" (??0_Locinfo@std@@QAE@PBD@Z)
+g_entity.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_Locinfo::_Locinfo_ctor(class std::_Locinfo *,char const *)" (?_Locinfo_ctor@_Locinfo@std@@SAXPAV12@PBD@Z)
+g_game.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_Locinfo::_Locinfo_ctor(class std::_Locinfo *,char const *)" (?_Locinfo_ctor@_Locinfo@std@@SAXPAV12@PBD@Z)
+g_ui.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::_Locinfo::_Locinfo_ctor(class std::_Locinfo *,char const *)" (?_Locinfo_ctor@_Locinfo@std@@SAXPAV12@PBD@Z)
+ent_trigger_push.obj : error LNK2001: unresolved external symbol "public: __thiscall std::bad_cast::bad_cast(char const *)" (??0bad_cast@std@@QAE@PBD@Z)
+ent_light.obj : error LNK2001: unresolved external symbol "public: __thiscall std::bad_cast::bad_cast(char const *)" (??0bad_cast@std@@QAE@PBD@Z)
+ent_phys_model.obj : error LNK2001: unresolved external symbol "public: __thiscall std::bad_cast::bad_cast(char const *)" (??0bad_cast@std@@QAE@PBD@Z)
+ent_player.obj : error LNK2001: unresolved external symbol "public: __thiscall std::bad_cast::bad_cast(char const *)" (??0bad_cast@std@@QAE@PBD@Z)
+ent_rocket.obj : error LNK2001: unresolved external symbol "public: __thiscall std::bad_cast::bad_cast(char const *)" (??0bad_cast@std@@QAE@PBD@Z)
+r_hud.obj : error LNK2001: unresolved external symbol "public: __thiscall std::bad_cast::bad_cast(char const *)" (??0bad_cast@std@@QAE@PBD@Z)
+entity.obj : error LNK2001: unresolved external symbol "public: __thiscall std::bad_cast::bad_cast(char const *)" (??0bad_cast@std@@QAE@PBD@Z)
+ent_func_fovwarp.obj : error LNK2001: unresolved external symbol "public: __thiscall std::bad_cast::bad_cast(char const *)" (??0bad_cast@std@@QAE@PBD@Z)
+ent_grenade.obj : error LNK2001: unresolved external symbol "public: __thiscall std::bad_cast::bad_cast(char const *)" (??0bad_cast@std@@QAE@PBD@Z)
+cvars.obj : error LNK2019: unresolved external symbol "public: __thiscall std::bad_cast::bad_cast(char const *)" (??0bad_cast@std@@QAE@PBD@Z) referenced in function "class std::ctype<char> const & __cdecl std::use_facet<class std::ctype<char> >(class std::locale const &)" (??$use_facet@V?$ctype@D@std@@@std@@YAABV?$ctype@D@0@ABVlocale@0@@Z)
+g_entity.obj : error LNK2001: unresolved external symbol "public: __thiscall std::bad_cast::bad_cast(char const *)" (??0bad_cast@std@@QAE@PBD@Z)
+g_game.obj : error LNK2001: unresolved external symbol "public: __thiscall std::bad_cast::bad_cast(char const *)" (??0bad_cast@std@@QAE@PBD@Z)
+g_ui.obj : error LNK2001: unresolved external symbol "public: __thiscall std::bad_cast::bad_cast(char const *)" (??0bad_cast@std@@QAE@PBD@Z)
+ent_trigger_push.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall std::bad_cast::~bad_cast(void)" (??1bad_cast@std@@UAE@XZ)
+ent_light.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall std::bad_cast::~bad_cast(void)" (??1bad_cast@std@@UAE@XZ)
+ent_phys_model.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall std::bad_cast::~bad_cast(void)" (??1bad_cast@std@@UAE@XZ)
+ent_player.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall std::bad_cast::~bad_cast(void)" (??1bad_cast@std@@UAE@XZ)
+ent_rocket.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall std::bad_cast::~bad_cast(void)" (??1bad_cast@std@@UAE@XZ)
+r_hud.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall std::bad_cast::~bad_cast(void)" (??1bad_cast@std@@UAE@XZ)
+entity.obj : error LNK2019: unresolved external symbol "public: virtual __thiscall std::bad_cast::~bad_cast(void)" (??1bad_cast@std@@UAE@XZ) referenced in function "protected: virtual char __thiscall std::ctype<char>::do_tolower(char)const " (?do_tolower@?$ctype@D@std@@MBEDD@Z)
+ent_func_fovwarp.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall std::bad_cast::~bad_cast(void)" (??1bad_cast@std@@UAE@XZ)
+ent_grenade.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall std::bad_cast::~bad_cast(void)" (??1bad_cast@std@@UAE@XZ)
+cvars.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall std::bad_cast::~bad_cast(void)" (??1bad_cast@std@@UAE@XZ)
+g_entity.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall std::bad_cast::~bad_cast(void)" (??1bad_cast@std@@UAE@XZ)
+g_game.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall std::bad_cast::~bad_cast(void)" (??1bad_cast@std@@UAE@XZ)
+g_ui.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall std::bad_cast::~bad_cast(void)" (??1bad_cast@std@@UAE@XZ)
+ent_trigger_push.obj : error LNK2001: unresolved external symbol "public: __thiscall std::bad_cast::bad_cast(class std::bad_cast const &)" (??0bad_cast@std@@QAE@ABV01@@Z)
+ent_light.obj : error LNK2001: unresolved external symbol "public: __thiscall std::bad_cast::bad_cast(class std::bad_cast const &)" (??0bad_cast@std@@QAE@ABV01@@Z)
+ent_phys_model.obj : error LNK2001: unresolved external symbol "public: __thiscall std::bad_cast::bad_cast(class std::bad_cast const &)" (??0bad_cast@std@@QAE@ABV01@@Z)
+ent_player.obj : error LNK2001: unresolved external symbol "public: __thiscall std::bad_cast::bad_cast(class std::bad_cast const &)" (??0bad_cast@std@@QAE@ABV01@@Z)
+ent_rocket.obj : error LNK2001: unresolved external symbol "public: __thiscall std::bad_cast::bad_cast(class std::bad_cast const &)" (??0bad_cast@std@@QAE@ABV01@@Z)
+r_hud.obj : error LNK2001: unresolved external symbol "public: __thiscall std::bad_cast::bad_cast(class std::bad_cast const &)" (??0bad_cast@std@@QAE@ABV01@@Z)
+entity.obj : error LNK2001: unresolved external symbol "public: __thiscall std::bad_cast::bad_cast(class std::bad_cast const &)" (??0bad_cast@std@@QAE@ABV01@@Z)
+ent_func_fovwarp.obj : error LNK2001: unresolved external symbol "public: __thiscall std::bad_cast::bad_cast(class std::bad_cast const &)" (??0bad_cast@std@@QAE@ABV01@@Z)
+ent_grenade.obj : error LNK2019: unresolved external symbol "public: __thiscall std::bad_cast::bad_cast(class std::bad_cast const &)" (??0bad_cast@std@@QAE@ABV01@@Z) referenced in function __ehhandler$?do_get@?$num_get@DV?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$istreambuf_iterator@DU?$char_traits@D@std@@@2@V32@0AAVios_base@2@AAHAA_K@Z
+cvars.obj : error LNK2001: unresolved external symbol "public: __thiscall std::bad_cast::bad_cast(class std::bad_cast const &)" (??0bad_cast@std@@QAE@ABV01@@Z)
+g_entity.obj : error LNK2019: unresolved external symbol "public: __thiscall std::bad_cast::bad_cast(class std::bad_cast const &)" (??0bad_cast@std@@QAE@ABV01@@Z) referenced in function "protected: virtual char __thiscall std::ctype<char>::do_toupper(char)const " (?do_toupper@?$ctype@D@std@@MBEDD@Z)
+g_game.obj : error LNK2001: unresolved external symbol "public: __thiscall std::bad_cast::bad_cast(class std::bad_cast const &)" (??0bad_cast@std@@QAE@ABV01@@Z)
+g_ui.obj : error LNK2001: unresolved external symbol "public: __thiscall std::bad_cast::bad_cast(class std::bad_cast const &)" (??0bad_cast@std@@QAE@ABV01@@Z)
+ent_trigger_push.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::ios_base::_Addstd(class std::ios_base *)" (?_Addstd@ios_base@std@@SAXPAV12@@Z)
+ent_light.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::ios_base::_Addstd(class std::ios_base *)" (?_Addstd@ios_base@std@@SAXPAV12@@Z)
+ent_phys_model.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::ios_base::_Addstd(class std::ios_base *)" (?_Addstd@ios_base@std@@SAXPAV12@@Z)
+ent_player.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::ios_base::_Addstd(class std::ios_base *)" (?_Addstd@ios_base@std@@SAXPAV12@@Z)
+ent_rocket.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::ios_base::_Addstd(class std::ios_base *)" (?_Addstd@ios_base@std@@SAXPAV12@@Z)
+r_hud.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::ios_base::_Addstd(class std::ios_base *)" (?_Addstd@ios_base@std@@SAXPAV12@@Z)
+entity.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::ios_base::_Addstd(class std::ios_base *)" (?_Addstd@ios_base@std@@SAXPAV12@@Z)
+ent_func_fovwarp.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::ios_base::_Addstd(class std::ios_base *)" (?_Addstd@ios_base@std@@SAXPAV12@@Z)
+ent_grenade.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::ios_base::_Addstd(class std::ios_base *)" (?_Addstd@ios_base@std@@SAXPAV12@@Z)
+cvars.obj : error LNK2019: unresolved external symbol "public: static void __cdecl std::ios_base::_Addstd(class std::ios_base *)" (?_Addstd@ios_base@std@@SAXPAV12@@Z) referenced in function "protected: void __thiscall std::basic_ios<char,struct std::char_traits<char> >::init(class std::basic_streambuf<char,struct std::char_traits<char> > *,bool)" (?init@?$basic_ios@DU?$char_traits@D@std@@@std@@IAEXPAV?$basic_streambuf@DU?$char_traits@D@std@@@2@_N@Z)
+g_entity.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::ios_base::_Addstd(class std::ios_base *)" (?_Addstd@ios_base@std@@SAXPAV12@@Z)
+g_game.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::ios_base::_Addstd(class std::ios_base *)" (?_Addstd@ios_base@std@@SAXPAV12@@Z)
+g_ui.obj : error LNK2001: unresolved external symbol "public: static void __cdecl std::ios_base::_Addstd(class std::ios_base *)" (?_Addstd@ios_base@std@@SAXPAV12@@Z)
+ent_trigger_push.obj : error LNK2001: unresolved external symbol _sprintf_s
+entity.obj : error LNK2019: unresolved external symbol _sprintf_s referenced in function "protected: virtual class std::ostreambuf_iterator<char,struct std::char_traits<char> > __thiscall std::num_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::do_put(class std::ostreambuf_iterator<char,struct std::char_traits<char> >,class std::ios_base &,char,__int64)const " (?do_put@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@D_J@Z)
+ent_func_fovwarp.obj : error LNK2001: unresolved external symbol _sprintf_s
+ent_grenade.obj : error LNK2001: unresolved external symbol _sprintf_s
+ent_rocket.obj : error LNK2001: unresolved external symbol _sprintf_s
+cvars.obj : error LNK2019: unresolved external symbol _sprintf_s referenced in function "protected: virtual class std::ostreambuf_iterator<char,struct std::char_traits<char> > __thiscall std::num_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::do_put(class std::ostreambuf_iterator<char,struct std::char_traits<char> >,class std::ios_base &,char,long)const " (?do_put@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DJ@Z)
+g_game.obj : error LNK2001: unresolved external symbol _sprintf_s
+g_ui.obj : error LNK2001: unresolved external symbol _sprintf_s
+r_hud.obj : error LNK2001: unresolved external symbol _sprintf_s
+ent_rocket.obj : error LNK2001: unresolved external symbol __Stoulx
+ent_grenade.obj : error LNK2001: unresolved external symbol __Stoulx
+ent_light.obj : error LNK2001: unresolved external symbol __Stoulx
+ent_phys_model.obj : error LNK2001: unresolved external symbol __Stoulx
+ent_player.obj : error LNK2001: unresolved external symbol __Stoulx
+cvars.obj : error LNK2019: unresolved external symbol __Stoulx referenced in function "protected: virtual class std::istreambuf_iterator<char,struct std::char_traits<char> > __thiscall std::num_get<char,class std::istreambuf_iterator<char,struct std::char_traits<char> > >::do_get(class std::istreambuf_iterator<char,struct std::char_traits<char> >,class std::istreambuf_iterator<char,struct std::char_traits<char> >,class std::ios_base &,int &,bool &)const " (?do_get@?$num_get@DV?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$istreambuf_iterator@DU?$char_traits@D@std@@@2@V32@0AAVios_base@2@AAHAA_N@Z)
+g_game.obj : error LNK2001: unresolved external symbol __Stoulx
+g_ui.obj : error LNK2019: unresolved external symbol __Stoulx referenced in function __catch$??$?5DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YAAAV?$basic_istream@DU?$char_traits@D@std@@@0@AAV10@AAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z$0
+entity.obj : error LNK2001: unresolved external symbol __Stoulx
+ent_rocket.obj : error LNK2001: unresolved external symbol __Stolx
+ent_grenade.obj : error LNK2001: unresolved external symbol __Stolx
+ent_light.obj : error LNK2001: unresolved external symbol __Stolx
+ent_phys_model.obj : error LNK2001: unresolved external symbol __Stolx
+ent_player.obj : error LNK2001: unresolved external symbol __Stolx
+cvars.obj : error LNK2019: unresolved external symbol __Stolx referenced in function "protected: virtual class std::istreambuf_iterator<char,struct std::char_traits<char> > __thiscall std::num_get<char,class std::istreambuf_iterator<char,struct std::char_traits<char> > >::do_get(class std::istreambuf_iterator<char,struct std::char_traits<char> >,class std::istreambuf_iterator<char,struct std::char_traits<char> >,class std::ios_base &,int &,long &)const " (?do_get@?$num_get@DV?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$istreambuf_iterator@DU?$char_traits@D@std@@@2@V32@0AAVios_base@2@AAHAAJ@Z)
+g_game.obj : error LNK2001: unresolved external symbol __Stolx
+g_ui.obj : error LNK2001: unresolved external symbol __Stolx
+entity.obj : error LNK2001: unresolved external symbol __Stolx
+ent_rocket.obj : error LNK2001: unresolved external symbol __Stofx
+ent_grenade.obj : error LNK2001: unresolved external symbol __Stofx
+ent_light.obj : error LNK2001: unresolved external symbol __Stofx
+ent_phys_model.obj : error LNK2001: unresolved external symbol __Stofx
+ent_player.obj : error LNK2001: unresolved external symbol __Stofx
+cvars.obj : error LNK2019: unresolved external symbol __Stofx referenced in function "protected: virtual class std::istreambuf_iterator<char,struct std::char_traits<char> > __thiscall std::num_get<char,class std::istreambuf_iterator<char,struct std::char_traits<char> > >::do_get(class std::istreambuf_iterator<char,struct std::char_traits<char> >,class std::istreambuf_iterator<char,struct std::char_traits<char> >,class std::ios_base &,int &,float &)const " (?do_get@?$num_get@DV?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$istreambuf_iterator@DU?$char_traits@D@std@@@2@V32@0AAVios_base@2@AAHAAM@Z)
+g_game.obj : error LNK2001: unresolved external symbol __Stofx
+g_ui.obj : error LNK2001: unresolved external symbol __Stofx
+entity.obj : error LNK2001: unresolved external symbol __Stofx
+ent_rocket.obj : error LNK2001: unresolved external symbol __Stodx
+ent_grenade.obj : error LNK2001: unresolved external symbol __Stodx
+ent_light.obj : error LNK2001: unresolved external symbol __Stodx
+ent_phys_model.obj : error LNK2001: unresolved external symbol __Stodx
+ent_player.obj : error LNK2001: unresolved external symbol __Stodx
+cvars.obj : error LNK2019: unresolved external symbol __Stodx referenced in function "protected: virtual class std::istreambuf_iterator<char,struct std::char_traits<char> > __thiscall std::num_get<char,class std::istreambuf_iterator<char,struct std::char_traits<char> > >::do_get(class std::istreambuf_iterator<char,struct std::char_traits<char> >,class std::istreambuf_iterator<char,struct std::char_traits<char> >,class std::ios_base &,int &,double &)const " (?do_get@?$num_get@DV?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$istreambuf_iterator@DU?$char_traits@D@std@@@2@V32@0AAVios_base@2@AAHAAN@Z)
+g_game.obj : error LNK2019: unresolved external symbol __Stodx referenced in function __ehhandler$??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z
+g_ui.obj : error LNK2001: unresolved external symbol __Stodx
+entity.obj : error LNK2001: unresolved external symbol __Stodx
+ent_rocket.obj : error LNK2001: unresolved external symbol __Stoldx
+ent_grenade.obj : error LNK2001: unresolved external symbol __Stoldx
+ent_light.obj : error LNK2001: unresolved external symbol __Stoldx
+ent_phys_model.obj : error LNK2001: unresolved external symbol __Stoldx
+ent_player.obj : error LNK2001: unresolved external symbol __Stoldx
+cvars.obj : error LNK2019: unresolved external symbol __Stoldx referenced in function "protected: virtual class std::istreambuf_iterator<char,struct std::char_traits<char> > __thiscall std::num_get<char,class std::istreambuf_iterator<char,struct std::char_traits<char> > >::do_get(class std::istreambuf_iterator<char,struct std::char_traits<char> >,class std::istreambuf_iterator<char,struct std::char_traits<char> >,class std::ios_base &,int &,long double &)const " (?do_get@?$num_get@DV?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$istreambuf_iterator@DU?$char_traits@D@std@@@2@V32@0AAVios_base@2@AAHAAO@Z)
+g_game.obj : error LNK2019: unresolved external symbol __Stoldx referenced in function "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::operator<<<char,struct std::char_traits<char>,class std::allocator<char> >(class std::basic_ostream<char,struct std::char_traits<char> > &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??$?6DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z)
+g_ui.obj : error LNK2001: unresolved external symbol __Stoldx
+entity.obj : error LNK2001: unresolved external symbol __Stoldx
+r_hud.obj : error LNK2019: unresolved external symbol __ftol2_sse referenced in function "float __cdecl UpdateFPSCounter(void)" (?UpdateFPSCounter@@YAMXZ)
+ent_player.obj : error LNK2001: unresolved external symbol __ftol2_sse
+../../bin/haste.exe : fatal error LNK1120: 27 unresolved externals
+Fehler beim Ausführen von link.exe.
+
+
+
+<h3>Ergebnisse</h3>
+haste.exe - 404 Fehler, 2 Warnung(en)
+</pre>
+</body>
+</html>

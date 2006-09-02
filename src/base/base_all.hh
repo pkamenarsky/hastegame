@@ -1,0 +1,31 @@
+#ifndef ION_BASE_ACCUMULATEDHEADERS_HH_INCLUDED
+#define ION_BASE_ACCUMULATEDHEADERS_HH_INCLUDED
+
+#include "basememobj.hh"
+#include "baserefcounted.hh"
+#include "bz2pkhandler.hh"
+#include "datablock.hh"
+#include "dll.hh"
+#include "dynobject.hh"
+#include "fpscalc.hh"
+#include "iontypes.hh"
+#include "localfile.hh"
+#include "localstreamable.hh"
+#include "log.hh"
+#include "managedmemobj.hh"
+#include "nullstream.hh"
+#include "numericarrays.hh"
+#include "physfsfile.hh"
+#include "pkdatablock.hh"
+#include "refcounted.hh"
+#include "refcountedsource.hh"
+#include "refptr.hh"
+#include "stdoutstream.hh"
+//#include "stlallocator.hh"
+#include "streamable.hh"
+#include "string.hh"
+#include "stringlist.hh"
+#include "timer.hh"
+#include "zpkhandler.hh"
+
+#endif

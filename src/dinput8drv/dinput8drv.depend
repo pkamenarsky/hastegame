@@ -1,0 +1,75 @@
+# depslib dependency file v1.0
+1143928226 d:\coding\ion\dinput8drv\dllmain.cpp
+	<crtdbg.h>
+	<windows.h>
+
+1134081816 d:\coding\ion\dinput8drv\keyboard.cpp
+	<memory.h>
+	<string.h>
+	"keyboard.hh"
+
+1134081816 d:\coding\ion\dinput8drv\keyboard.hh
+	"di8.hh"
+	"../base/dll.hh"
+	"../base/iontypes.hh"
+	"../input/inputdevice.hh"
+
+1143928806 d:\coding\ion\dinput8drv\di8.hh
+	<windows.h>
+	<winnt.h>
+	<dinput.h>
+
+1134081818 d:\coding\ion\base\dll.hh
+
+1134081818 d:\coding\ion\base\iontypes.hh
+	<stddef.h>
+	<inttypes.h>
+
+1134081814 d:\coding\ion\input\inputdevice.hh
+	"../base/basememobj.hh"
+	"../base/dll.hh"
+	"../base/iontypes.hh"
+	"../base/string.hh"
+
+1142545778 d:\coding\ion\base\basememobj.hh
+	<cstdlib>
+	"dll.hh"
+
+1142550130 d:\coding\ion\base\string.hh
+	<string>
+	"basememobj.hh"
+	"dll.hh"
+
+1143934054 d:\coding\ion\dinput8drv\mouse.cpp
+	<memory.h>
+	"../input/mousestates.hh"
+	"mouse.hh"
+
+1143231636 d:\coding\ion\input\mousestates.hh
+
+1134081816 d:\coding\ion\dinput8drv\mouse.hh
+	"di8.hh"
+	"../base/dll.hh"
+	"../base/iontypes.hh"
+	"../input/inputdevice.hh"
+	<string>
+
+1143935100 d:\coding\ion\dinput8drv\di8server.cpp
+	<crtdbg.h>
+	"di8.hh"
+	"di8server.hh"
+	"mouse.hh"
+	"keyboard.hh"
+	<map>
+	<vector>
+
+1135546360 d:\coding\ion\dinput8drv\di8server.hh
+	"../base/dll.hh"
+	"../input/inputserver.hh"
+
+1135546340 d:\coding\ion\input\inputserver.hh
+	"../base/basememobj.hh"
+	"../base/dll.hh"
+	"../base/string.hh"
+	"inputdevice.hh"
+

@@ -1,0 +1,89 @@
+# depslib dependency file v1.0
+1143874174 d:\coding\ion\extern\zlib\adler32.c
+	"zlib.h"
+
+1143874174 d:\coding\ion\extern\zlib\zlib.h
+	"zconf.h"
+
+1143874174 d:\coding\ion\extern\zlib\zconf.h
+	<windows.h>
+	<sys/types.h>
+	<unistd.h>
+	<unixio.h>
+
+1143874174 d:\coding\ion\extern\zlib\compress.c
+	"zlib.h"
+
+1143874174 d:\coding\ion\extern\zlib\crc32.c
+	<stdio.h>
+	"zutil.h"
+	<limits.h>
+	"crc32.h"
+
+1143874174 d:\coding\ion\extern\zlib\zutil.h
+	"zlib.h"
+	<stddef.h>
+	<string.h>
+	<stdlib.h>
+	<errno.h>
+	<alloc.h>
+	<malloc.h>
+	<malloc.h>
+	<unix.h>
+	<stdio.h>
+
+1143874174 d:\coding\ion\extern\zlib\crc32.h
+
+1143874174 d:\coding\ion\extern\zlib\deflate.c
+	"deflate.h"
+
+1143874174 d:\coding\ion\extern\zlib\deflate.h
+	"zutil.h"
+
+1143874174 d:\coding\ion\extern\zlib\infback.c
+	"zutil.h"
+	"inftrees.h"
+	"inflate.h"
+	"inffast.h"
+	"inffixed.h"
+
+1143874174 d:\coding\ion\extern\zlib\inftrees.h
+
+1143874174 d:\coding\ion\extern\zlib\inflate.h
+
+1143874174 d:\coding\ion\extern\zlib\inffast.h
+
+1143874174 d:\coding\ion\extern\zlib\inffixed.h
+
+1143874174 d:\coding\ion\extern\zlib\inffast.c
+	"zutil.h"
+	"inftrees.h"
+	"inflate.h"
+	"inffast.h"
+
+1143874174 d:\coding\ion\extern\zlib\inflate.c
+	"zutil.h"
+	"inftrees.h"
+	"inflate.h"
+	"inffast.h"
+	"inffixed.h"
+	<stdio.h>
+
+1143874174 d:\coding\ion\extern\zlib\inftrees.c
+	"zutil.h"
+	"inftrees.h"
+
+1143874174 d:\coding\ion\extern\zlib\trees.c
+	"deflate.h"
+	<ctype.h>
+	"trees.h"
+	<stdio.h>
+
+1143874174 d:\coding\ion\extern\zlib\trees.h
+
+1143874174 d:\coding\ion\extern\zlib\uncompr.c
+	"zlib.h"
+
+1143874174 d:\coding\ion\extern\zlib\zutil.c
+	"zutil.h"
+

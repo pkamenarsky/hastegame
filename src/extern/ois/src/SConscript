@@ -1,0 +1,3 @@
+sources=Split('OISEffect.cpp OISForceFeedback.cpp OISInputManager.cpp OISKeyboard.cpp OISObject.cpp linux/EventHelpers.cpp linux/LinuxForceFeedback.cpp linux/LinuxInputManager.cpp linux/LinuxJoyStick.cpp linux/LinuxJoyStickEvents.cpp linux/LinuxKeyboard.cpp linux/LinuxMouse.cpp')
+
+StaticLibrary(target='ois',source=sources,CPPPATH=['../includes'],CPPFLAGS='-ggdb')

@@ -1,0 +1,127 @@
+# depslib dependency file v1.0
+1135250312 d:\coding\ion\extern\ois\src\oiseffect.cpp
+	"OISEffect.h"
+	"OISException.h"
+
+1142887764 d:\coding\ion\extern\ois\includes\oiseffect.h
+	"OISPrereqs.h"
+
+1133801272 d:\coding\ion\extern\ois\includes\oisprereqs.h
+	<vector>
+	<string>
+	<map>
+	"OISConfig.h"
+
+1140992046 d:\coding\ion\extern\ois\includes\oisconfig.h
+
+1140992046 d:\coding\ion\extern\ois\includes\oisexception.h
+
+1131005866 d:\coding\ion\extern\ois\src\oisforcefeedback.cpp
+	"OISForceFeedback.h"
+	"OISException.h"
+
+1135252176 d:\coding\ion\extern\ois\includes\oisforcefeedback.h
+	"OISPrereqs.h"
+	"OISInterface.h"
+	"OISEffect.h"
+
+1131566472 d:\coding\ion\extern\ois\includes\oisinterface.h
+	"OISPrereqs.h"
+
+1130585748 d:\coding\ion\extern\ois\src\oisinputmanager.cpp
+	"OISInputManager.h"
+	"OISException.h"
+	"Win32/Win32InputManager.h"
+	"linux/LinuxInputManager.h"
+	"Mac/MacInputManager.h"
+	"XBox/XBoxInputManager.h"
+
+1131566472 d:\coding\ion\extern\ois\includes\oisinputmanager.h
+	"OISPrereqs.h"
+
+1128430978 d:\coding\ion\extern\ois\includes\win32\win32inputmanager.h
+	"OISInputManager.h"
+	"Win32/Win32Prereqs.h"
+
+1130585748 d:\coding\ion\extern\ois\includes\win32\win32prereqs.h
+	<windows.h>
+	<dinput.h>
+
+1130315324 d:\coding\ion\extern\ois\includes\linux\linuxinputmanager.h
+	"OISInputManager.h"
+	"linux/LinuxPrereqs.h"
+	<X11/Xlib.h>
+
+1131005866 d:\coding\ion\extern\ois\includes\linux\linuxprereqs.h
+
+1142887806 d:\coding\ion\extern\ois\src\oiskeyboard.cpp
+	"OISKeyboard.h"
+	"OISException.h"
+
+1131566472 d:\coding\ion\extern\ois\includes\oiskeyboard.h
+	"OISObject.h"
+
+1131566472 d:\coding\ion\extern\ois\includes\oisobject.h
+	"OISPrereqs.h"
+	"OISInterface.h"
+
+1130349070 d:\coding\ion\extern\ois\src\oisobject.cpp
+	"OISObject.h"
+
+1135253194 d:\coding\ion\extern\ois\src\win32\win32forcefeedback.cpp
+	"Win32/Win32ForceFeedback.h"
+	"OISException.h"
+	<Math.h>
+
+1135253194 d:\coding\ion\extern\ois\includes\win32\win32forcefeedback.h
+	"OISPrereqs.h"
+	"OISForceFeedback.h"
+	"Win32/Win32Prereqs.h"
+
+1142887834 d:\coding\ion\extern\ois\src\win32\win32inputmanager.cpp
+	"Win32/Win32InputManager.h"
+	"Win32/Win32Keyboard.h"
+	"Win32/Win32Mouse.h"
+	"Win32/Win32JoyStick.h"
+	"OISException.h"
+
+1142887698 d:\coding\ion\extern\ois\includes\win32\win32keyboard.h
+	"OISKeyboard.h"
+	"Win32/Win32Prereqs.h"
+
+1130585748 d:\coding\ion\extern\ois\includes\win32\win32mouse.h
+	"OISMouse.h"
+	"Win32/Win32Prereqs.h"
+
+1131566472 d:\coding\ion\extern\ois\includes\oismouse.h
+	"OISObject.h"
+
+1130585748 d:\coding\ion\extern\ois\includes\win32\win32joystick.h
+	"OISJoyStick.h"
+	"Win32/Win32Prereqs.h"
+
+1131566472 d:\coding\ion\extern\ois\includes\oisjoystick.h
+	"OISObject.h"
+
+1143934096 d:\coding\ion\extern\ois\src\win32\win32joystick.cpp
+	"Win32/Win32JoyStick.h"
+	"Win32/Win32InputManager.h"
+	"Win32/Win32ForceFeedback.h"
+	"OISEvents.h"
+	"OISException.h"
+
+1131566472 d:\coding\ion\extern\ois\includes\oisevents.h
+	"OISPrereqs.h"
+
+1142887706 d:\coding\ion\extern\ois\src\win32\win32keyboard.cpp
+	"Win32/Win32InputManager.h"
+	"Win32/Win32KeyBoard.h"
+	"OISException.h"
+	"OISEvents.h"
+
+1143934108 d:\coding\ion\extern\ois\src\win32\win32mouse.cpp
+	"Win32/Win32Mouse.h"
+	"Win32/Win32InputManager.h"
+	"OISException.h"
+	"OISEvents.h"
+

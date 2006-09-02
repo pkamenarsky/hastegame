@@ -1,0 +1,132 @@
+<html>
+<body>
+<pre>
+<h1>Erstellungsprotokoll</h1>
+<h3>
+--------------------Konfiguration: ion - Win32 Release--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+Erstellen der temporären Datei  "C:\DOKUME~1\phil\LOKALE~1\Temp\RSP43B.tmp" mit Inhalten
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ../extern/bzip2/Release/libbz2.lib ../extern/zlib/Release/zlib.lib ../extern/physfs/physfs_static_release/physfs_static.lib ../extern/tinyxml/Release_STL/tinyxml_STL.lib ../../extern/corona/Release_static/corona_static.lib ../../../../freetype-2.1.10/objs/freetype2110MT.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"../../../bin/ion.pdb" /machine:IX86 /out:"../../../bin/ion.dll" /implib:".\../../../bin/ion.lib" /pdbtype:sept /opt:ref /opt:icf 
+".\Release\audioserver.obj"
+".\Release\sound.obj"
+".\Release\voice.obj"
+".\Release\basememobj.obj"
+".\Release\baserefcounted.obj"
+".\Release\bz2pkhandler.obj"
+".\Release\datablock.obj"
+".\Release\dynobject_win32.obj"
+".\Release\fpscalc.obj"
+".\Release\ignorecase.obj"
+".\Release\localfile.obj"
+".\Release\localstreamable.obj"
+".\Release\log.obj"
+".\Release\managedmemobj.obj"
+".\Release\nullstream.obj"
+".\Release\numericarrays.obj"
+".\Release\physfsfile.obj"
+".\Release\pkdatablock.obj"
+".\Release\refcounted.obj"
+".\Release\stdoutstream.obj"
+".\Release\stlallocator.obj"
+".\Release\streamable.obj"
+".\Release\string.obj"
+".\Release\stringlist.obj"
+".\Release\timer.obj"
+".\Release\zpkhandler.obj"
+".\Release\inputdevice.obj"
+".\Release\inputserver.obj"
+".\Release\aabbvolume.obj"
+".\Release\arcball.obj"
+".\Release\frustum.obj"
+".\Release\interpolator.obj"
+".\Release\lerp.obj"
+".\Release\matrix.obj"
+".\Release\meshconv.obj"
+".\Release\obbvolume.obj"
+".\Release\plane.obj"
+".\Release\rectangle.obj"
+".\Release\spherevolume.obj"
+".\Release\transform.obj"
+".\Release\vectors.obj"
+".\Release\camera.obj"
+".\Release\depthprepassprograms.obj"
+".\Release\dot3programs.obj"
+".\Release\dot3renderer.obj"
+".\Release\dot3shader.obj"
+".\Release\ffprenderer.obj"
+".\Release\group.obj"
+".\Release\indexlist.obj"
+".\Release\iscloader.obj"
+".\Release\light.obj"
+".\Release\lightlist.obj"
+".\Release\node.obj"
+".\Release\nodelist.obj"
+".\Release\pplprograms.obj"
+".\Release\q3bsp.obj"
+".\Release\q3shaders.obj"
+".\Release\renderable.obj"
+".\Release\renderablelist.obj"
+".\Release\renderablemesh.obj"
+".\Release\renderablemeshnode.obj"
+".\Release\renderer.obj"
+".\Release\renderjob.obj"
+".\Release\renderjoblist.obj"
+".\Release\renderjobqueue.obj"
+".\Release\renderquery.obj"
+".\Release\shader.obj"
+".\Release\simplespace.obj"
+".\Release\xmlshader.obj"
+".\Release\attributebuffer.obj"
+".\Release\attributetable.obj"
+".\Release\caps.obj"
+".\Release\channeldatatype.obj"
+".\Release\color.obj"
+".\Release\cubemap.obj"
+".\Release\draw2dcache.obj"
+".\Release\font.obj"
+".\Release\indexiterator.obj"
+".\Release\indexstream.obj"
+".\Release\loadobj.obj"
+".\Release\memindexstream.obj"
+".\Release\memvertexstream.obj"
+".\Release\mesh.obj"
+".\Release\occlusionquery.obj"
+".\Release\picbuffer.obj"
+".\Release\picloader.obj"
+".\Release\picsaver.obj"
+".\Release\pixelformat.obj"
+".\Release\program.obj"
+".\Release\programarray.obj"
+".\Release\propertytable.obj"
+".\Release\simplepicbuffer.obj"
+".\Release\stateblock.obj"
+".\Release\texture.obj"
+".\Release\texture2d.obj"
+".\Release\vcache.obj"
+".\Release\vertexformat.obj"
+".\Release\vertexiterator.obj"
+".\Release\vertexstream.obj"
+".\Release\videodevice.obj"
+".\$(IntDir)\$(InputName)3.obj"
+"\Programme\Microsoft Visual Studio\CG23_new\src\vc6\EXTERN\bzip2\Release\bzip2.lib"
+"\Programme\Microsoft Visual Studio\CG23_new\src\vc6\EXTERN\extern\corona\Release_static\corona_static.lib"
+"\Programme\Microsoft Visual Studio\CG23_new\src\vc6\EXTERN\physfs\Release\physfs.lib"
+"\Programme\Microsoft Visual Studio\CG23_new\src\vc6\EXTERN\tinyxml\Release\tinyxml.lib"
+"\Programme\Microsoft Visual Studio\CG23_new\src\vc6\EXTERN\zlib\Release\zlib.lib"
+]
+Erstellen der Befehlzeile "link.exe @C:\DOKUME~1\phil\LOKALE~1\Temp\RSP43B.tmp"
+<h3>Ausgabefenster</h3>
+Linker-Vorgang läuft...
+LINK : warning LNK4224: /PDBTYPE is no longer supported;  ignored
+LINK : fatal error LNK1104: cannot open file '.\$(IntDir)\$(InputName)3.obj'
+Fehler beim Ausführen von link.exe.
+
+
+
+<h3>Ergebnisse</h3>
+ion.dll - 1 Fehler, 1 Warnung(en)
+</pre>
+</body>
+</html>
